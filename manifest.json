@@ -1,0 +1,3789 @@
+{
+ "contentVersion": 1,
+ "lessons": [
+  {
+   "courseID": "ethanol",
+   "title": {
+    "fa": "متابولیسم اتانول",
+    "en": "Ethanol Metabolism"
+   },
+   "subtitle": {
+    "fa": "چرا مازاد NADH منشأ تقریباً همهٔ عوارض است",
+    "en": "Why excess NADH drives nearly every consequence"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "متابولیسم اتانول",
+     "en": "Ethanol Metabolism"
+    },
+    "subtitle": {
+     "fa": "دو گام، و مازاد NADH که همه‌چیز را توضیح می‌دهد",
+     "en": "Two steps, and the excess NADH that explains everything"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "کبد ",
+         "en": "The liver metabolizes "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "اتانول (ethanol)",
+         "en": "ethanol"
+        },
+        "definition": {
+         "fa": "الکل موجود در نوشیدنی‌های الکلی که در کبد طی دو مرحله متابولیزه می‌شود.",
+         "en": "The alcohol in alcoholic drinks; metabolized by the liver in two steps."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " را طی دو مرحله متابولیزه می‌کند؛ هر دو مرحله ",
+         "en": " in two steps, and both steps produce "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "NADH",
+         "en": "NADH"
+        },
+        "definition": {
+         "fa": "حامل الکترون؛ تجمع بیش از حد آن ریشهٔ تقریباً همهٔ عوارض بیوشیمیایی الکل است.",
+         "en": "Electron carrier; its build-up is the root of nearly every biochemical harm of alcohol."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " می‌سازند. همین مازاد NADH است که هیپوگلیسمی، کتوز، اسیدوز لاکتیک و کبد چرب را به هم گره می‌زند.",
+         "en": ". That single surplus of NADH ties together the hypoglycemia, ketosis, lactic acidosis, and fatty liver."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "مسیر دو مرحله‌ای اتانول",
+        "en": "The two-step ethanol pathway"
+       },
+       "subtitle": {
+        "fa": "هر گام یک NADH تولید می‌کند",
+        "en": "Each step yields NADH"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "sub",
+         "row": 0,
+         "label": {
+          "fa": "اتانول",
+          "en": "ethanol"
+         },
+         "explanation": {
+          "fa": "مادهٔ اولیه؛ در سیتوزول سلول‌های کبد وارد متابولیسم می‌شود.",
+          "en": "The starting substrate; enters metabolism in the cytosol of liver cells."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "استالدهید",
+          "en": "acetaldehyde"
+         },
+         "explanation": {
+          "fa": "میانی سمی؛ تجمع آن به سلول کبد آسیب می‌زند و باعث گرگرفتگی می‌شود.",
+          "en": "A toxic intermediate; its build-up damages hepatocytes and causes flushing."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "prod",
+         "row": 2,
+         "label": {
+          "fa": "استات",
+          "en": "acetate"
+         },
+         "explanation": {
+          "fa": "محصول نهایی؛ در کبد به استیل‌CoA تبدیل می‌شود.",
+          "en": "The end-product; converted to acetyl-CoA in the liver."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "الکل‌دهیدروژناز (ADH) — سیتوزول، ‎+NADH",
+          "en": "alcohol dehydrogenase (ADH) — cytosol, +NADH"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "آلدهیددهیدروژناز (ALDH) — میتوکندری، ‎+NADH",
+          "en": "aldehyde dehydrogenase (ALDH) — mitochondria, +NADH"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "سطح بالای NADH ",
+         "en": "High NADH stalls the "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "چرخهٔ TCA",
+         "en": "TCA cycle"
+        },
+        "definition": {
+         "fa": "چرخهٔ کربس؛ مسیر مرکزی تولید انرژی در میتوکندری.",
+         "en": "The Krebs cycle; the central energy-producing pathway in mitochondria."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " را متوقف می‌کند: هم آنزیم‌های ",
+         "en": ": it inhibits both "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "ایزوسیترات‌دهیدروژناز",
+         "en": "isocitrate dehydrogenase"
+        },
+        "definition": {
+         "fa": "آنزیم محدودکنندهٔ سرعت TCA که با NADH مهار می‌شود.",
+         "en": "A rate-limiting TCA enzyme, inhibited by NADH."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " و ",
+         "en": " and "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "آلفا-کتوگلوتارات‌دهیدروژناز",
+         "en": "alpha-ketoglutarate dehydrogenase"
+        },
+        "definition": {
+         "fa": "آنزیم دیگر TCA که با NADH مهار می‌شود.",
+         "en": "Another TCA enzyme inhibited by NADH."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " را مهار می‌کند و هم ",
+         "en": ", and it also shunts "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "اگزالواستات (OAA)",
+         "en": "oxaloacetate (OAA)"
+        },
+        "definition": {
+         "fa": "حدواسط TCA و پیش‌ساز گلوکونئوژنز؛ در حضور NADH بالا به مالات منحرف می‌شود.",
+         "en": "A TCA intermediate and gluconeogenesis precursor; diverted to malate when NADH is high."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " را به مالات منحرف می‌کند — یعنی چرخه را عقب می‌راند.",
+         "en": " toward malate — effectively driving the cycle backward."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "چگونه مازاد NADH به عوارض می‌رسد",
+        "en": "How excess NADH becomes the complications"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "مازاد NADH",
+          "en": "excess NADH"
+         },
+         "explanation": {
+          "fa": "منشأ مشترک؛ نسبت NADH/NAD+ را بالا می‌برد.",
+          "en": "The common source; it raises the NADH/NAD+ ratio."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "OAA → مالات",
+          "en": "OAA → malate"
+         },
+         "explanation": {
+          "fa": "OAA کم می‌شود؛ کمتر برای گلوکونئوژنز و برای ورود استیل‌CoA به TCA باقی می‌ماند.",
+          "en": "OAA is depleted, leaving less for gluconeogenesis and for pulling acetyl-CoA into the TCA cycle."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "پیروات → لاکتات",
+          "en": "pyruvate → lactate"
+         },
+         "explanation": {
+          "fa": "برای بازتولید NAD+؛ نتیجه اسیدوز لاکتیک است.",
+          "en": "Regenerates NAD+; the result is lactic acidosis."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "prod",
+         "row": 2,
+         "label": {
+          "fa": "هیپوگلیسمی",
+          "en": "hypoglycemia"
+         },
+         "explanation": {
+          "fa": "گلوکونئوژنز مهار می‌شود؛ حفظ قند خون به گلیکوژن وابسته می‌شود.",
+          "en": "Gluconeogenesis is inhibited, so blood sugar depends on glycogen stores."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "prod",
+         "row": 2,
+         "label": {
+          "fa": "تجمع استیل‌CoA → کتون‌ها",
+          "en": "acetyl-CoA build-up → ketones"
+         },
+         "explanation": {
+          "fa": "استیل‌CoA نمی‌تواند وارد TCA شود؛ به سمت اجسام کتونی می‌رود.",
+          "en": "Acetyl-CoA cannot enter the TCA cycle, so it is shunted to ketone bodies."
+         }
+        },
+        {
+         "id": "n6",
+         "kind": "prod",
+         "row": 2,
+         "label": {
+          "fa": "کبد چرب",
+          "en": "fatty liver"
+         },
+         "explanation": {
+          "fa": "بتا-اکسیداسیون کند می‌شود و سنتز اسید چرب و تری‌گلیسرید بالا می‌رود.",
+          "en": "Beta oxidation slows while fatty-acid and triglyceride synthesis rise."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2"
+        },
+        {
+         "from": "n1",
+         "to": "n3"
+        },
+        {
+         "from": "n2",
+         "to": "n4"
+        },
+        {
+         "from": "n2",
+         "to": "n5"
+        },
+        {
+         "from": "n1",
+         "to": "n6"
+        },
+        {
+         "from": "n3",
+         "to": "n4",
+         "label": {
+          "fa": "اسیدوز لاکتیک",
+          "en": "lactic acidosis"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "warn",
+       "title": {
+        "fa": "دام کلاسیک",
+        "en": "Classic trap"
+       },
+       "body": {
+        "fa": "بیشترین خطر هیپوگلیسمی وقتی است که ذخیرهٔ گلیکوژن از قبل کم باشد: فرد الکلی که غذا نمی‌خورد، یا کسی که پس از دوی طولانی مشروب می‌خورد و ذخیرهٔ گلیکوژنش تخلیه شده است.",
+        "en": "Hypoglycemia is most dangerous when glycogen is already low: the drinker who does not eat, or someone who drinks heavily after a long run with depleted glycogen."
+       }
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "کبد چرب از چند مسیر همزمان ساخته می‌شود: ",
+         "en": "The fatty liver is built by several parallel routes: "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "بتا-اکسیداسیون",
+         "en": "beta oxidation"
+        },
+        "definition": {
+         "fa": "تجزیهٔ اسیدهای چرب؛ به NAD+ نیاز دارد و در NADH بالا مهار می‌شود.",
+         "en": "Fatty-acid breakdown; it needs NAD+ and is inhibited when NADH is high."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " مهار می‌شود، سیترات به سیتوزول می‌رود و ",
+         "en": " is inhibited, citrate moves to the cytosol and activates "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "استیل‌CoA کربوکسیلاز",
+         "en": "acetyl-CoA carboxylase"
+        },
+        "definition": {
+         "fa": "آنزیم محدودکنندهٔ سنتز اسید چرب؛ مالونیل‌CoA می‌سازد.",
+         "en": "The rate-limiting enzyme of fatty-acid synthesis; makes malonyl-CoA."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " را فعال می‌کند، و مالات از طریق آنزیم مالیک NADPH می‌سازد. در نهایت گلیسرول-۳-فسفات با اسیدهای چرب ترکیب می‌شود و تری‌گلیسرید در کبد تلنبار می‌شود.",
+         "en": ", and malate feeds the malic enzyme to make NADPH. Finally glycerol-3-phosphate combines with fatty acids and triglycerides pile up in the liver."
+        }
+       }
+      ]
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "نقرس در الکلی‌ها",
+        "en": "Gout in alcoholics"
+       },
+       "body": {
+        "fa": "لاکتات بالای پلاسما با اسید اوریک بر سر ناقل URAT1 در توبول پروگزیمال رقابت می‌کند: لاکتات بیشتر ترشح می‌شود و اسید اوریک بیشتری بازجذب می‌شود. نتیجه هیپراوریسمی و حملهٔ نقرس است — کلاسیک در انگشت شست پا.",
+        "en": "High plasma lactate competes with uric acid at the URAT1 transporter in the proximal tubule: more lactate is secreted and more uric acid is reabsorbed. The result is hyperuricemia and a gout attack — classically in the big toe."
+       }
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "هپاتیت و سیروز از دو راه ایجاد می‌شوند. اول، NADH بالا گام دوم را کند می‌کند و ",
+         "en": "Hepatitis and cirrhosis arise two ways. First, high NADH slows the second step so "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "استالدهید",
+         "en": "acetaldehyde"
+        },
+        "definition": {
+         "fa": "میانی سمی که به‌طور حاد التهاب و به‌طور مزمن بافت اسکار می‌سازد.",
+         "en": "The toxic intermediate that acutely inflames and chronically scars the liver."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " تجمع می‌یابد و به سلول کبد آسیب می‌زند. دوم، ",
+         "en": " accumulates and injures hepatocytes. Second, the "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "سیستم اکسیدکنندهٔ میکروزومال اتانول (MEOS)",
+         "en": "microsomal ethanol-oxidizing system (MEOS)"
+        },
+        "definition": {
+         "fa": "مسیر جایگزین وابسته به سیتوکروم P450 که در مصرف زیاد فعال می‌شود، رادیکال آزاد می‌سازد و گلوتاتیون را تخلیه می‌کند.",
+         "en": "A cytochrome-P450-dependent alternative pathway that activates with heavy use, makes free radicals, and depletes glutathione."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " رادیکال آزاد تولید و گلوتاتیون را مصرف می‌کند و حفاظت سلول در برابر استرس اکسیداتیو را از بین می‌برد.",
+         "en": " generates free radicals and consumes glutathione, stripping the cell of protection against oxidative stress."
+        }
+       }
+      ]
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "ویژگی",
+         "en": "Feature"
+        },
+        {
+         "fa": "فومپیزول (Antizol)",
+         "en": "Fomepizole (Antizol)"
+        },
+        {
+         "fa": "دی‌سولفیرام (Antabuse)",
+         "en": "Disulfiram (Antabuse)"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "آنزیم هدف",
+          "en": "Target enzyme"
+         },
+         {
+          "fa": "الکل‌دهیدروژناز (ADH)",
+          "en": "alcohol dehydrogenase (ADH)"
+         },
+         {
+          "fa": "آلدهیددهیدروژناز (ALDH)",
+          "en": "aldehyde dehydrogenase (ALDH)"
+         }
+        ],
+        [
+         {
+          "fa": "کاربرد",
+          "en": "Use"
+         },
+         {
+          "fa": "مسمومیت متانول و اتیلن‌گلیکول",
+          "en": "methanol & ethylene-glycol poisoning"
+         },
+         {
+          "fa": "بازدارندگی از مصرف الکل",
+          "en": "deterrent to drinking"
+         }
+        ],
+        [
+         {
+          "fa": "اثر",
+          "en": "Effect"
+         },
+         {
+          "fa": "جلوگیری از ساخت متابولیت‌های سمی",
+          "en": "blocks formation of toxic metabolites"
+         },
+         {
+          "fa": "تجمع استالدهید → گرگرفتگی، تهوع، تپش قلب",
+          "en": "acetaldehyde build-up → flushing, nausea, palpitations"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "mnem",
+       "title": {
+        "fa": "الکل‌دهیدروژناز و سموم",
+        "en": "ADH and the poisons"
+       },
+       "body": {
+        "fa": "ADH با سینتیک درجه‌صفر کار می‌کند (سرعت ثابت). همین آنزیم متانول را به فرمیک‌اسید و اتیلن‌گلیکول را به اگزالات تبدیل می‌کند — هر دو سمی. برای همین در مسمومیت، فومپیزول ADH را مهار می‌کند تا این متابولیت‌های سمی ساخته نشوند.",
+        "en": "ADH runs at zero-order kinetics (a constant rate). The same enzyme turns methanol into formic acid and ethylene glycol into oxalate — both toxic. That is why, in poisoning, fomepizole inhibits ADH to prevent those toxic metabolites."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "گرگرفتگی الکلی",
+        "en": "Alcohol flushing"
+       },
+       "body": {
+        "fa": "کمبود ارثی آنزیم ALDH2 متابولیسم استالدهید را کند می‌کند؛ تجمع آن باعث قرمزی و گرگرفتگی صورت می‌شود. این حالت در جمعیت‌های شرق آسیا (ژاپن، چین، کره) شایع‌تر است و با افزایش خفیف خطر سرطان مری/اوروفارنکس همراه است.",
+        "en": "An inherited ALDH2 deficiency slows acetaldehyde metabolism; its build-up causes facial redness and flushing. It is more common in East-Asian populations (Japan, China, Korea) and carries a slightly increased risk of esophageal/oropharyngeal cancer."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "اتانول در سیتوزول با ADH به استالدهید تبدیل می‌شود (+NADH).",
+        "en": "Ethanol → acetaldehyde by ADH in the cytosol (+NADH)."
+       },
+       {
+        "fa": "استالدهید در میتوکندری با ALDH به استات تبدیل می‌شود (+NADH).",
+        "en": "Acetaldehyde → acetate by ALDH in the mitochondria (+NADH)."
+       },
+       {
+        "fa": "مازاد NADH چرخهٔ TCA را متوقف و OAA را به مالات منحرف می‌کند.",
+        "en": "Excess NADH stalls the TCA cycle and diverts OAA to malate."
+       },
+       {
+        "fa": "کاهش OAA → کاهش گلوکونئوژنز → هیپوگلیسمی (بدتر با گلیکوژن کم).",
+        "en": "Less OAA → less gluconeogenesis → hypoglycemia (worse when glycogen is low)."
+       },
+       {
+        "fa": "تجمع استیل‌CoA → کتوز؛ پیروات → لاکتات → اسیدوز لاکتیک.",
+        "en": "Acetyl-CoA build-up → ketosis; pyruvate → lactate → lactic acidosis."
+       },
+       {
+        "fa": "اختلال متابولیسم چربی → کبد چرب؛ لاکتات بالا → هیپراوریسمی و نقرس.",
+        "en": "Deranged fat metabolism → fatty liver; high lactate → hyperuricemia and gout."
+       },
+       {
+        "fa": "سمیت استالدهید و رادیکال‌های MEOS → هپاتیت و سیروز.",
+        "en": "Acetaldehyde toxicity and MEOS free radicals → hepatitis and cirrhosis."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "«acid aldehyde» در ترنسکریپت به «استالدهید (acetaldehyde)» تصحیح شد.",
+       "en": "Corrected the transcript's 'acid aldehyde' to 'acetaldehyde'."
+      }
+     },
+     {
+      "index": 2,
+      "note": {
+       "fa": "«cytochrome P4850» به «سیتوکروم P450» تصحیح شد.",
+       "en": "Corrected 'cytochrome P4850' to 'cytochrome P450'."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "ketones",
+   "title": {
+    "fa": "اجسام کتونی",
+    "en": "Ketone Bodies"
+   },
+   "subtitle": {
+    "fa": "سوخت جایگزین وقتی چرخهٔ TCA اشباع می‌شود",
+    "en": "An alternative fuel when the TCA cycle is overwhelmed"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "اجسام کتونی",
+     "en": "Ketone Bodies"
+    },
+    "subtitle": {
+     "fa": "وقتی استیل‌CoA از ظرفیت TCA فراتر می‌رود",
+     "en": "When acetyl-CoA outruns the TCA cycle"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "اجسام کتونی (ketone bodies)",
+         "en": "ketone bodies"
+        },
+        "definition": {
+         "fa": "سوخت جایگزین که کبد در ناشتایی و گرسنگی از استیل‌CoA می‌سازد و به بافت‌ها می‌فرستد.",
+         "en": "An alternative fuel the liver makes from acetyl-CoA in fasting/starvation and exports to tissues."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " سوخت جایگزین برای برخی سلول‌ها هستند. در ناشتایی، اسیدهای چرب به کبد می‌رسند و با ",
+         "en": " are an alternative fuel for some cells. In fasting, fatty acids reach the liver and, via "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "بتا-اکسیداسیون",
+         "en": "beta oxidation"
+        },
+        "definition": {
+         "fa": "تجزیهٔ اسید چرب که استیل‌CoA فراوان تولید می‌کند.",
+         "en": "Fatty-acid breakdown that produces abundant acetyl-CoA."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " سطح استیل‌CoA را چنان بالا می‌برند که از ظرفیت چرخهٔ TCA فراتر می‌رود؛ آنگاه استیل‌CoA به‌سوی ساخت کتون منحرف می‌شود.",
+         "en": ", raise acetyl-CoA above the TCA cycle's capacity; the surplus is then shunted into ketone synthesis."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "کتوژنز (ساخت کتون)",
+        "en": "Ketogenesis"
+       },
+       "subtitle": {
+        "fa": "دو استیل‌CoA تا اجسام کتونی",
+        "en": "From two acetyl-CoA to the ketone bodies"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "sub",
+         "row": 0,
+         "label": {
+          "fa": "۲ × استیل‌CoA",
+          "en": "2 × acetyl-CoA"
+         },
+         "explanation": {
+          "fa": "ماده اولیه؛ در کبد وقتی استیل‌CoA زیاد است.",
+          "en": "The starting material, in the liver when acetyl-CoA is high."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "استواستیل‌CoA",
+          "en": "acetoacetyl-CoA"
+         },
+         "explanation": {
+          "fa": "ترکیب دو استیل‌CoA.",
+          "en": "Two acetyl-CoA joined together."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "HMG-CoA",
+          "en": "HMG-CoA"
+         },
+         "explanation": {
+          "fa": "هیدروکسی-متیل‌گلوتاریل‌CoA؛ حدواسط مشترک با مسیر ساخت کلسترول.",
+          "en": "Hydroxy-methylglutaryl-CoA; an intermediate shared with cholesterol synthesis."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "prod",
+         "row": 3,
+         "label": {
+          "fa": "استواستات",
+          "en": "acetoacetate"
+         },
+         "explanation": {
+          "fa": "اولین جسم کتونی؛ قابل استفاده به‌عنوان سوخت.",
+          "en": "The first ketone body; usable as fuel."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "prod",
+         "row": 4,
+         "label": {
+          "fa": "بتا-هیدروکسی‌بوتیرات",
+          "en": "3-hydroxybutyrate"
+         },
+         "explanation": {
+          "fa": "جسم کتونی سوختی؛ در بافت‌ها دوباره به استواستات تبدیل می‌شود.",
+          "en": "A fuel ketone body; reconverted to acetoacetate in tissues."
+         }
+        },
+        {
+         "id": "n6",
+         "kind": "prod",
+         "row": 4,
+         "label": {
+          "fa": "استون",
+          "en": "acetone"
+         },
+         "explanation": {
+          "fa": "سوخت نیست؛ از ریه بازدم می‌شود و بوی میوه‌ای نفس می‌دهد.",
+          "en": "Not a fuel; exhaled by the lungs, giving fruity breath."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2"
+        },
+        {
+         "from": "n2",
+         "to": "n3"
+        },
+        {
+         "from": "n3",
+         "to": "n4"
+        },
+        {
+         "from": "n4",
+         "to": "n5"
+        },
+        {
+         "from": "n4",
+         "to": "n6"
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "نکتهٔ کلیدی: کبد کتون می‌سازد اما نمی‌تواند از آن استفاده کند، پس آن را به خون می‌ریزد. ",
+         "en": "The key point: the liver makes ketones but cannot use them, so it releases them into the blood. "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "کتولیز (ketolysis)",
+         "en": "ketolysis"
+        },
+        "definition": {
+         "fa": "برعکسِ کتوژنز؛ در بافت‌ها کتون به دو استیل‌CoA برای ورود به TCA تبدیل می‌شود.",
+         "en": "The reverse of ketogenesis; in tissues, ketones become two acetyl-CoA to enter the TCA cycle."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " در عضله و قلب انجام می‌شود و گلوکز را برای مغز حفظ می‌کند؛ مغز هم در ناشتایی می‌تواند از کتون استفاده کند.",
+         "en": " happens in muscle and heart, sparing glucose for the brain; the brain too can use ketones during fasting."
+        }
+       }
+      ]
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "چرا نفس بوی میوه می‌دهد",
+        "en": "Why the breath smells fruity"
+       },
+       "body": {
+        "fa": "استون سوخت نیست و از کلیه دفع نمی‌شود؛ از ریه بازدم می‌شود. به همین دلیل بیمارانی که کتون می‌سازند بوی میوه‌ای در نفس دارند.",
+        "en": "Acetone is not a fuel and is not excreted by the kidney; it is exhaled by the lungs. That is why patients making ketones have fruity-smelling breath."
+       }
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "اجسام کتونی pKa پایینی دارند و در pH پلاسما پروتون آزاد می‌کنند؛ پس سطح بالای کتون یک ",
+         "en": "Ketone bodies have a low pKa and release protons at plasma pH; so high ketone levels cause an "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "اسیدوز متابولیک با آنیون‌گپ",
+         "en": "anion-gap metabolic acidosis"
+        },
+        "definition": {
+         "fa": "افت pH و بی‌کربنات با افزایش آنیون‌گپ؛ در کتواسیدوز دیده می‌شود.",
+         "en": "A fall in pH and bicarbonate with a widened anion gap; seen in ketoacidosis."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " ایجاد می‌کند. مهم‌ترین زمینه‌ها دیابت، الکلیسم و گرسنگی هستند.",
+         "en": ". The most important settings are diabetes, alcoholism, and starvation."
+        }
+       }
+      ]
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "ویژگی",
+         "en": "Feature"
+        },
+        {
+         "fa": "کتواسیدوز دیابتی",
+         "en": "Diabetic (DKA)"
+        },
+        {
+         "fa": "کتواسیدوز الکلی",
+         "en": "Alcoholic"
+        },
+        {
+         "fa": "کتوز گرسنگی",
+         "en": "Starvation"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "محرک اصلی",
+          "en": "Main trigger"
+         },
+         {
+          "fa": "انسولین پایین",
+          "en": "Low insulin"
+         },
+         {
+          "fa": "مازاد NADH از الکل",
+          "en": "Excess NADH from alcohol"
+         },
+         {
+          "fa": "نبود دریافت غذا",
+          "en": "No food intake"
+         }
+        ],
+        [
+         {
+          "fa": "قند خون",
+          "en": "Blood glucose"
+         },
+         {
+          "fa": "بالا",
+          "en": "High"
+         },
+         {
+          "fa": "پایین یا نرمال",
+          "en": "Low or normal"
+         },
+         {
+          "fa": "پایین-نرمال",
+          "en": "Low-normal"
+         }
+        ],
+        [
+         {
+          "fa": "مکانیسم مشترک",
+          "en": "Shared mechanism"
+         },
+         {
+          "fa": "توقف TCA، استیل‌CoA بالا",
+          "en": "TCA stalls, acetyl-CoA high"
+         },
+         {
+          "fa": "OAA به مالات منحرف",
+          "en": "OAA diverted to malate"
+         },
+         {
+          "fa": "بسیج اسید چرب",
+          "en": "Fatty-acid mobilization"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "کتون در ادرار",
+        "en": "Ketones in the urine"
+       },
+       "body": {
+        "fa": "معمولاً کتون‌ها را با نوار ادرار می‌سنجند. در حالت طبیعی کتونی در ادرار نیست؛ وجود آن نشانهٔ مشکل است — دیابت کنترل‌نشده و DKA، گرسنگی/سوءتغذیه (مثلاً تهوع و استفراغ طولانی)، و الکلیسم.",
+        "en": "Ketones are usually detected on a urine dipstick. Normally there are none; their presence signals a problem — uncontrolled diabetes and DKA, starvation/undernutrition (e.g. prolonged nausea and vomiting), and alcoholism."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "در ناشتایی، بتا-اکسیداسیون استیل‌CoA را از ظرفیت TCA بالاتر می‌برد.",
+        "en": "In fasting, beta oxidation pushes acetyl-CoA above the TCA cycle's capacity."
+       },
+       {
+        "fa": "کبد استیل‌CoA اضافی را از مسیر HMG-CoA به کتون تبدیل می‌کند.",
+        "en": "The liver converts the surplus acetyl-CoA to ketones via HMG-CoA."
+       },
+       {
+        "fa": "استواستات و بتا-هیدروکسی‌بوتیرات سوخت‌اند؛ استون بازدم می‌شود.",
+        "en": "Acetoacetate and 3-hydroxybutyrate are fuels; acetone is exhaled."
+       },
+       {
+        "fa": "کبد کتون را نمی‌سوزاند؛ عضله، قلب و مغز آن را با کتولیز مصرف می‌کنند.",
+        "en": "The liver cannot burn ketones; muscle, heart, and brain use them via ketolysis."
+       },
+       {
+        "fa": "کتون زیاد → اسیدوز با آنیون‌گپ؛ در دیابت، الکلیسم و گرسنگی.",
+        "en": "Excess ketones → anion-gap acidosis; in diabetes, alcoholism, and starvation."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "«ketonic» گفتاری به اصطلاح صحیح «ketotic/کتوز» تصحیح شد.",
+       "en": "Normalized the colloquial 'ketonic' to the correct 'ketotic/ketosis'."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "glycolysis",
+   "title": {
+    "fa": "گلیکولیز",
+    "en": "Glycolysis"
+   },
+   "subtitle": {
+    "fa": "سه مرحله، سه گام برگشت‌ناپذیر، و جایگاه تنظیم",
+    "en": "Three stages, three irreversible steps, and where regulation lives"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "گلیکولیز",
+     "en": "Glycolysis"
+    },
+    "subtitle": {
+     "fa": "از گلوکز تا پیروات؛ سه گام برگشت‌ناپذیر که همه‌چیز را تنظیم می‌کنند",
+     "en": "Glucose to pyruvate; the three irreversible steps that run the show"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "گلیکولیز (glycolysis)",
+         "en": "glycolysis"
+        },
+        "definition": {
+         "fa": "مسیر سیتوزولی که گلوکز شش‌کربنه را به دو پیروات سه‌کربنه می‌شکند و ATP و NADH می‌سازد.",
+         "en": "The cytosolic pathway that splits six-carbon glucose into two three-carbon pyruvates, making ATP and NADH."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " در سیتوزولِ همهٔ سلول‌ها رخ می‌دهد و بدون اکسیژن هم کار می‌کند. سود خالص آن ",
+         "en": " happens in the cytosol of every cell and works even without oxygen. Its net yield is "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "۲ ATP",
+         "en": "2 ATP"
+        },
+        "definition": {
+         "fa": "۴ ATP ساخته می‌شود منهای ۲ ATP که در مرحلهٔ پرایمینگ خرج می‌شود.",
+         "en": "4 ATP made minus 2 ATP spent in the priming stage."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " و ۲ ",
+         "en": " and 2 "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "NADH",
+         "en": "NADH"
+        },
+        "definition": {
+         "fa": "حامل الکترون که در حضور اکسیژن وارد زنجیرهٔ انتقال الکترون می‌شود.",
+         "en": "Electron carrier that feeds the electron transport chain when oxygen is present."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " به‌ازای هر گلوکز است.",
+         "en": " per glucose."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "مسیر گلیکولیز",
+        "en": "The glycolytic pathway"
+       },
+       "subtitle": {
+        "fa": "سه گام قرمز، برگشت‌ناپذیرند و تنظیم می‌شوند",
+        "en": "The three red steps are irreversible and regulated"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "گلوکز",
+          "en": "glucose"
+         },
+         "explanation": {
+          "fa": "پس از فسفریله شدن، در سلول به دام می‌افتد.",
+          "en": "Once phosphorylated it is trapped inside the cell."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "گلوکز-۶-فسفات",
+          "en": "glucose-6-phosphate"
+         },
+         "explanation": {
+          "fa": "تقاطع با گلیکوژن و شنت HMP.",
+          "en": "Branch point to glycogen and the HMP shunt."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "فروکتوز-۶-فسفات",
+          "en": "fructose-6-phosphate"
+         },
+         "explanation": {
+          "fa": "پیش از گام محدودکنندهٔ سرعت.",
+          "en": "Just before the rate-limiting step."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "sub",
+         "row": 3,
+         "label": {
+          "fa": "فروکتوز-۱،۶-بیس‌فسفات",
+          "en": "fructose-1,6-bisphosphate"
+         },
+         "explanation": {
+          "fa": "پس از این نقطه، مولکول متعهد به گلیکولیز است.",
+          "en": "Past this point the molecule is committed to glycolysis."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "sub",
+         "row": 4,
+         "label": {
+          "fa": "۲ × گلیسرآلدهید-۳-فسفات",
+          "en": "2 × glyceraldehyde-3-phosphate"
+         },
+         "explanation": {
+          "fa": "مرحلهٔ انرژی از اینجا شروع می‌شود (‎+NADH، ‎+ATP).",
+          "en": "The energy stage starts here (+NADH, +ATP)."
+         }
+        },
+        {
+         "id": "n6",
+         "kind": "prod",
+         "row": 5,
+         "label": {
+          "fa": "۲ × پیروات",
+          "en": "2 × pyruvate"
+         },
+         "explanation": {
+          "fa": "به استیل‌CoA، لاکتات، آلانین یا گلوکونئوژنز می‌رود.",
+          "en": "Goes on to acetyl-CoA, lactate, alanine, or gluconeogenesis."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "هگزوکیناز/گلوکوکیناز — برگشت‌ناپذیر",
+          "en": "hexokinase/glucokinase — irreversible"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "فسفوگلوکز ایزومراز",
+          "en": "phosphoglucose isomerase"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n4",
+         "label": {
+          "fa": "PFK-1 — محدودکنندهٔ سرعت، برگشت‌ناپذیر",
+          "en": "PFK-1 — rate-limiting, irreversible"
+         }
+        },
+        {
+         "from": "n4",
+         "to": "n5",
+         "label": {
+          "fa": "آلدولاز (شکافت)",
+          "en": "aldolase (split)"
+         }
+        },
+        {
+         "from": "n5",
+         "to": "n6",
+         "label": {
+          "fa": "... پیروات‌کیناز — برگشت‌ناپذیر",
+          "en": "... pyruvate kinase — irreversible"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "گلیکولیز سه مرحله دارد: مرحلهٔ ",
+         "en": "Glycolysis has three stages: the "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "پرایمینگ",
+         "en": "priming"
+        },
+        "definition": {
+         "fa": "۲ ATP سرمایه‌گذاری می‌شود تا گلوکز فعال شود.",
+         "en": "2 ATP are invested to activate glucose."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " (خرج ۲ ATP)، مرحلهٔ ",
+         "en": " stage (spends 2 ATP), the "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "شکافت",
+         "en": "splitting"
+        },
+        "definition": {
+         "fa": "قند شش‌کربنه به دو قند سه‌کربنه تقسیم می‌شود.",
+         "en": "The six-carbon sugar is cleaved into two three-carbon sugars."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": "، و مرحلهٔ انرژی که ۴ ATP می‌سازد — پس سود خالص ۲ ATP است.",
+         "en": ", and the energy stage that makes 4 ATP — so the net is 2 ATP."
+        }
+       }
+      ]
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "ویژگی",
+         "en": "Feature"
+        },
+        {
+         "fa": "هگزوکیناز",
+         "en": "Hexokinase"
+        },
+        {
+         "fa": "گلوکوکیناز",
+         "en": "Glucokinase"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "محل",
+          "en": "Location"
+         },
+         {
+          "fa": "بیشتر بافت‌ها",
+          "en": "Most tissues"
+         },
+         {
+          "fa": "کبد و پانکراس",
+          "en": "Liver & pancreas"
+         }
+        ],
+        [
+         {
+          "fa": "Km (میل)",
+          "en": "Km (affinity)"
+         },
+         {
+          "fa": "پایین — زود اشباع",
+          "en": "Low — saturates early"
+         },
+         {
+          "fa": "بالا — با گلوکز تغییر می‌کند",
+          "en": "High — tracks glucose"
+         }
+        ],
+        [
+         {
+          "fa": "Vmax",
+          "en": "Vmax"
+         },
+         {
+          "fa": "پایین",
+          "en": "Low"
+         },
+         {
+          "fa": "بالا",
+          "en": "High"
+         }
+        ],
+        [
+         {
+          "fa": "مهار با گلوکز-۶-فسفات",
+          "en": "Inhibited by G6P"
+         },
+         {
+          "fa": "بله",
+          "en": "Yes"
+         },
+         {
+          "fa": "خیر",
+          "en": "No"
+         }
+        ],
+        [
+         {
+          "fa": "القا با انسولین",
+          "en": "Induced by insulin"
+         },
+         {
+          "fa": "خیر",
+          "en": "No"
+         },
+         {
+          "fa": "بله",
+          "en": "Yes"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "کلید سینتیک",
+        "en": "The kinetics key"
+       },
+       "body": {
+        "fa": "Km پایینِ هگزوکیناز یعنی با کمی گلوکز به Vmax می‌رسد؛ پس بافت‌ها همیشه گلوکز را برمی‌دارند. Km بالای گلوکوکیناز یعنی سرعتش با سطح گلوکز بالا می‌رود؛ پس کبد فقط وقتی قند خون زیاد است گلوکز را برمی‌دارد و ذخیره می‌کند.",
+        "en": "Hexokinase's low Km means a little glucose drives it to Vmax, so tissues always take up glucose. Glucokinase's high Km means its rate rises with glucose, so the liver takes up and stores glucose only when blood sugar is high."
+       }
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "PFK-1",
+         "en": "PFK-1"
+        },
+        "definition": {
+         "fa": "فسفوفروکتوکیناز-۱؛ گام محدودکنندهٔ سرعت گلیکولیز.",
+         "en": "Phosphofructokinase-1; the rate-limiting step of glycolysis."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " گام محدودکنندهٔ سرعت است: با ATP و سیترات مهار و با AMP و ",
+         "en": " is the rate-limiting step: inhibited by ATP and citrate, activated by AMP and "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "فروکتوز-۲،۶-بیس‌فسفات",
+         "en": "fructose-2,6-bisphosphate"
+        },
+        "definition": {
+         "fa": "کلید روشن/خاموشِ گلیکولیز؛ انسولین سطحش را بالا و گلوکاگون پایین می‌برد.",
+         "en": "The on/off switch for glycolysis; insulin raises it, glucagon lowers it."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " فعال می‌شود. همین مولکول است که انسولین و گلوکاگون از طریق آن گلیکولیز را کنترل می‌کنند.",
+         "en": " activated. This is the molecule through which insulin and glucagon control glycolysis."
+        }
+       }
+      ]
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "اسیدوز لاکتیک",
+        "en": "Lactic acidosis"
+       },
+       "body": {
+        "fa": "وقتی اکسیژن کم است، پیروات به لاکتات تبدیل می‌شود تا NAD+ بازتولید شود و گلیکولیز ادامه یابد. نتیجه اسیدوز لاکتیک است — در سپسیس، ایسکمی روده و تشنج دیده می‌شود.",
+        "en": "When oxygen is scarce, pyruvate is converted to lactate to regenerate NAD+ so glycolysis can continue. The result is lactic acidosis — seen in sepsis, bowel ischemia, and seizures."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "کمبود پیروات‌کیناز",
+        "en": "Pyruvate kinase deficiency"
+       },
+       "body": {
+        "fa": "اتوزومال مغلوب؛ گلبول قرمز که میتوکندری ندارد به گلیکولیز وابسته است. بدون ATP، غشا حفظ نمی‌شود و همولیز خارج‌عروقی و اسپلنومگالی رخ می‌دهد.",
+        "en": "Autosomal recessive; the red cell, lacking mitochondria, depends on glycolysis. Without ATP it cannot maintain its membrane, causing extravascular hemolysis and splenomegaly."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "mnem",
+       "title": {
+        "fa": "سه گام تنظیمی",
+        "en": "The three regulated steps"
+       },
+       "body": {
+        "fa": "فقط سه واکنش برگشت‌ناپذیرند و تنظیم آنجاست: هگزوکیناز/گلوکوکیناز، PFK-1، و پیروات‌کیناز. بقیه برگشت‌پذیرند و در گلوکونئوژنز برعکس می‌شوند.",
+        "en": "Only three reactions are irreversible, and that is where regulation lives: hexokinase/glucokinase, PFK-1, and pyruvate kinase. The rest are reversible and run backward in gluconeogenesis."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "گلوکز با هگزوکیناز/گلوکوکیناز فسفریله و در سلول به دام می‌افتد.",
+        "en": "Glucose is phosphorylated by hexokinase/glucokinase and trapped in the cell."
+       },
+       {
+        "fa": "PFK-1 گام محدودکنندهٔ سرعت است و با فروکتوز-۲،۶-بیس‌فسفات کنترل می‌شود.",
+        "en": "PFK-1 is the rate-limiting step, controlled by fructose-2,6-bisphosphate."
+       },
+       {
+        "fa": "قند شش‌کربنه به دو گلیسرآلدهید-۳-فسفات شکسته می‌شود.",
+        "en": "The six-carbon sugar is split into two glyceraldehyde-3-phosphates."
+       },
+       {
+        "fa": "مرحلهٔ انرژی ۴ ATP و ۲ NADH می‌سازد؛ سود خالص ۲ ATP است.",
+        "en": "The energy stage yields 4 ATP and 2 NADH; net gain is 2 ATP."
+       },
+       {
+        "fa": "بدون اکسیژن، پیروات به لاکتات می‌رود تا NAD+ بازتولید شود.",
+        "en": "Without oxygen, pyruvate goes to lactate to regenerate NAD+."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "hmp-shunt",
+   "title": {
+    "fa": "شنت HMP",
+    "en": "HMP Shunt"
+   },
+   "subtitle": {
+    "fa": "منبع NADPH و ریبوز؛ و چرا گلبول قرمز بدون آن آسیب می‌بیند",
+    "en": "The source of NADPH and ribose — and why red cells suffer without it"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "شنت HMP",
+     "en": "HMP Shunt"
+    },
+    "subtitle": {
+     "fa": "کارخانهٔ NADPH و ریبوز — و سپر گلبول قرمز در برابر آسیب اکسیداتیو",
+     "en": "The NADPH and ribose factory — and the red cell's shield against oxidative damage"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "شنت HMP (HMP shunt)",
+         "en": "HMP shunt"
+        },
+        "definition": {
+         "fa": "همان مسیر پنتوز فسفات؛ انشعابی از گلوکز-۶-فسفات که NADPH و ریبوز-۵-فسفات می‌سازد.",
+         "en": "Also the pentose phosphate pathway; a branch off glucose-6-phosphate that makes NADPH and ribose-5-phosphate."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " در سیتوزول رخ می‌دهد و دو محصول کلیدی دارد: ",
+         "en": " runs in the cytosol and has two key products: "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "NADPH",
+         "en": "NADPH"
+        },
+        "definition": {
+         "fa": "قدرت احیایی برای ساخت چربی/استروئید، انفجار تنفسی، و دفاع آنتی‌اکسیدانی.",
+         "en": "Reducing power for fat/steroid synthesis, the respiratory burst, and antioxidant defense."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " و ",
+         "en": " and "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "ریبوز-۵-فسفات",
+         "en": "ribose-5-phosphate"
+        },
+        "definition": {
+         "fa": "قند لازم برای ساخت نوکلئوتیدها.",
+         "en": "The sugar needed to build nucleotides."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": ". مغز داستان، وابستگی گلبول قرمز به NADPH است.",
+         "en": ". The heart of the story is the red cell's dependence on NADPH."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "دو فاز شنت HMP",
+        "en": "The two phases of the HMP shunt"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "sub",
+         "row": 0,
+         "label": {
+          "fa": "گلوکز-۶-فسفات",
+          "en": "glucose-6-phosphate"
+         },
+         "explanation": {
+          "fa": "نقطهٔ انشعاب از گلیکولیز.",
+          "en": "The branch point off glycolysis."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "۶-فسفوگلوکونولاکتون",
+          "en": "6-phosphogluconolactone"
+         },
+         "explanation": {
+          "fa": "اولین محصول فاز اکسیداتیو.",
+          "en": "First product of the oxidative phase."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "ریبولوز-۵-فسفات",
+          "en": "ribulose-5-phosphate"
+         },
+         "explanation": {
+          "fa": "دو NADPH ساخته و یک CO2 خارج شده است.",
+          "en": "Two NADPH made and one CO2 removed."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "prod",
+         "row": 3,
+         "label": {
+          "fa": "ریبوز-۵-فسفات",
+          "en": "ribose-5-phosphate"
+         },
+         "explanation": {
+          "fa": "برای ساخت نوکلئوتید.",
+          "en": "For nucleotide synthesis."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "prod",
+         "row": 3,
+         "label": {
+          "fa": "فروکتوز-۶-فسفات",
+          "en": "fructose-6-phosphate"
+         },
+         "explanation": {
+          "fa": "با ترانس‌کتولاز به گلیکولیز بازمی‌گردد؛ نیازمند تیامین.",
+          "en": "Returns to glycolysis via transketolase; needs thiamine."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "گلوکز-۶-فسفات دهیدروژناز (G6PD) — محدودکننده",
+          "en": "glucose-6-phosphate dehydrogenase (G6PD) — rate-limiting"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "‎+NADPH، ‎-CO2",
+          "en": "+NADPH, -CO2"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n4",
+         "label": {
+          "fa": "فاز احیایی (برگشت‌پذیر)",
+          "en": "reductive phase (reversible)"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n5",
+         "label": {
+          "fa": "ترانس‌کتولاز (تیامین)",
+          "en": "transketolase (thiamine)"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "فاز اکسیداتیو برگشت‌ناپذیر و محدودکنندهٔ سرعت است و با آنزیم ",
+         "en": "The oxidative phase is irreversible and rate-limiting, run by "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "G6PD",
+         "en": "G6PD"
+        },
+        "definition": {
+         "fa": "گلوکز-۶-فسفات دهیدروژناز؛ منبع اصلی NADPH در گلبول قرمز.",
+         "en": "Glucose-6-phosphate dehydrogenase; the red cell's main NADPH source."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " NADPH می‌سازد. فاز احیایی برگشت‌پذیر است، ریبوز-۵-فسفات می‌سازد و ",
+         "en": " to make NADPH. The reductive phase is reversible, makes ribose-5-phosphate, and its "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "ترانس‌کتولاز",
+         "en": "transketolase"
+        },
+        "definition": {
+         "fa": "آنزیمی که به تیامین (ویتامین B1) نیاز دارد.",
+         "en": "An enzyme that requires thiamine (vitamin B1)."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " برای کارش به تیامین نیاز دارد.",
+         "en": " needs thiamine to work."
+        }
+       }
+      ]
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "چگونه NADPH از گلبول قرمز محافظت می‌کند؟ NADPH ",
+         "en": "How does NADPH protect the red cell? NADPH keeps "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "گلوتاتیون",
+         "en": "glutathione"
+        },
+        "definition": {
+         "fa": "آنتی‌اکسیدان اصلی سلول؛ فرم احیای آن با NADPH بازساخته می‌شود.",
+         "en": "The cell's main antioxidant; its reduced form is regenerated using NADPH."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " را به فرم احیا نگه می‌دارد تا ",
+         "en": " in its reduced form so it can neutralize "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "پراکسید هیدروژن (H2O2)",
+         "en": "hydrogen peroxide (H2O2)"
+        },
+        "definition": {
+         "fa": "گونهٔ اکسیداتیو که به غشای گلبول قرمز آسیب می‌زند.",
+         "en": "A reactive oxidant that damages the red-cell membrane."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " را خنثی کند. بدون G6PD، NADPH کافی نیست، گلوتاتیون بازساخته نمی‌شود و سلول همولیز می‌شود.",
+         "en": ". Without G6PD there is not enough NADPH, glutathione is not regenerated, and the cell hemolyzes."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "انفجار تنفسی (کشتن باکتری)",
+        "en": "The respiratory burst (killing bacteria)"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "اکسیژن",
+          "en": "oxygen"
+         },
+         "explanation": {
+          "fa": "کشتن وابسته به اکسیژن از اینجا شروع می‌شود.",
+          "en": "Oxygen-dependent killing starts here."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "رادیکال سوپراکسید",
+          "en": "superoxide radical"
+         },
+         "explanation": {
+          "fa": "با NADPH اکسیداز و مصرف NADPH.",
+          "en": "Made by NADPH oxidase, consuming NADPH."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "پراکسید هیدروژن",
+          "en": "hydrogen peroxide"
+         },
+         "explanation": {
+          "fa": "با سوپراکسید دیسموتاز.",
+          "en": "Made by superoxide dismutase."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "prod",
+         "row": 3,
+         "label": {
+          "fa": "هیپوکلروس‌اسید",
+          "en": "hypochlorous acid"
+         },
+         "explanation": {
+          "fa": "با میلوپراکسیداز؛ همان مادهٔ سفیدکنندهٔ خانگی.",
+          "en": "Made by myeloperoxidase; the active agent in household bleach."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "NADPH اکسیداز (‎+NADPH)",
+          "en": "NADPH oxidase (+NADPH)"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "سوپراکسید دیسموتاز",
+          "en": "superoxide dismutase"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n4",
+         "label": {
+          "fa": "میلوپراکسیداز",
+          "en": "myeloperoxidase"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "بیماری گرانولوماتوز مزمن (CGD)",
+        "en": "Chronic granulomatous disease (CGD)"
+       },
+       "body": {
+        "fa": "نقص آنزیم NADPH اکسیداز؛ فاگوسیت‌ها پراکسید هیدروژن نمی‌سازند. عفونت‌های مکرر با باکتری‌های کاتالاز-مثبت: استاف اورئوس، سودوموناس، سراشیا، نوکاردیا و آسپرژیلوس.",
+        "en": "A defect in NADPH oxidase; phagocytes cannot make hydrogen peroxide. Recurrent infections with catalase-positive organisms: Staph aureus, Pseudomonas, Serratia, Nocardia, and Aspergillus."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "کمبود G6PD",
+        "en": "G6PD deficiency"
+       },
+       "body": {
+        "fa": "شایع‌ترین اختلال آنزیمی انسان؛ وابسته به X (پس در پسرها). همولیز پس از محرک‌ها رخ می‌دهد و با اجسام هاینز و سلول‌های گازگرفته دیده می‌شود. شیوع بالا در مناطق مالاریاخیز، چون در برابر مالاریا محافظت نسبی می‌دهد.",
+        "en": "The most common human enzyme disorder; X-linked (so in males). Hemolysis follows a trigger and shows Heinz bodies and bite cells. Common where malaria is endemic, since it is partly protective against malaria."
+       }
+      }
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "نوع محرک",
+         "en": "Trigger type"
+        },
+        {
+         "fa": "مثال",
+         "en": "Example"
+        },
+        {
+         "fa": "چرا همولیز می‌دهد",
+         "en": "Why it hemolyzes"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "عفونت",
+          "en": "Infection"
+         },
+         {
+          "fa": "هر عفونت حاد",
+          "en": "Any acute infection"
+         },
+         {
+          "fa": "فاگوسیت‌ها رادیکال آزاد می‌سازند",
+          "en": "Phagocytes generate free radicals"
+         }
+        ],
+        [
+         {
+          "fa": "غذا",
+          "en": "Food"
+         },
+         {
+          "fa": "باقلا (fava beans)",
+          "en": "Fava beans"
+         },
+         {
+          "fa": "حاوی اکسیدان‌اند",
+          "en": "Contain oxidants"
+         }
+        ],
+        [
+         {
+          "fa": "دارو",
+          "en": "Drugs"
+         },
+         {
+          "fa": "سولفا، داپسون، نیتروفورانتوئین، پریماکین، INH",
+          "en": "Sulfa, dapsone, nitrofurantoin, primaquine, INH"
+         },
+         {
+          "fa": "استرس اکسیداتیو ایجاد می‌کنند",
+          "en": "Impose oxidative stress"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "فاز اکسیداتیو (G6PD) برگشت‌ناپذیر است و NADPH می‌سازد.",
+        "en": "The oxidative phase (G6PD) is irreversible and makes NADPH."
+       },
+       {
+        "fa": "فاز احیایی ریبوز-۵-فسفات می‌سازد؛ ترانس‌کتولاز به تیامین نیاز دارد.",
+        "en": "The reductive phase makes ribose-5-phosphate; transketolase needs thiamine."
+       },
+       {
+        "fa": "NADPH گلوتاتیون را احیا نگه می‌دارد تا H2O2 را خنثی کند.",
+        "en": "NADPH keeps glutathione reduced to neutralize H2O2."
+       },
+       {
+        "fa": "نقص NADPH اکسیداز → CGD؛ نقص G6PD → همولیز با محرک.",
+        "en": "NADPH-oxidase defect → CGD; G6PD defect → triggered hemolysis."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "توضیح: «هگزوز مونوفسفات»، «مسیر پنتوز فسفات» و «مسیر ۶-فسفوگلوکونات» نام‌های یک مسیر واحدند.",
+       "en": "Clarified that 'hexose monophosphate', 'pentose phosphate pathway', and '6-phosphogluconate pathway' are all names for the one pathway."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "purines",
+   "title": {
+    "fa": "متابولیسم پورین‌ها",
+    "en": "Purine Metabolism"
+   },
+   "subtitle": {
+    "fa": "از PRPP تا اوریک‌اسید: ساخت، بازیافت و نقرس",
+    "en": "From PRPP to uric acid: synthesis, salvage, and gout"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "متابولیسم پورین‌ها",
+     "en": "Purine Metabolism"
+    },
+    "subtitle": {
+     "fa": "ساخت de novo، بازیافت، و راه رسیدن به اوریک‌اسید و نقرس",
+     "en": "De novo synthesis, salvage, and the road to uric acid and gout"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "پورین‌ها (purines)",
+         "en": "purines"
+        },
+        "definition": {
+         "fa": "نوکلئوتیدهای دوحلقه‌ای: آدنوزین و گوانوزین.",
+         "en": "The two-ring nucleotides: adenosine and guanosine."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " دو حلقه دارند و علاوه بر ساخت DNA/RNA، به‌عنوان انرژی (",
+         "en": " have two rings and, beyond building DNA/RNA, serve as energy ("
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "ATP",
+         "en": "ATP"
+        },
+        "definition": {
+         "fa": "منبع اصلی انرژی سلول؛ همان آدنوزین تری‌فسفات.",
+         "en": "The cell's main energy currency; adenosine triphosphate."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": ") و پیام‌رسان دوم (cAMP، cGMP) کار می‌کنند. تمام نیتروژن بازها از آمینواسیدها می‌آید.",
+         "en": ") and second messengers (cAMP, cGMP). All the nitrogen in the bases comes from amino acids."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "ساخت de novo پورین",
+        "en": "De novo purine synthesis"
+       },
+       "subtitle": {
+        "fa": "برخلاف پیریمیدین‌ها، اول قند سپس باز",
+        "en": "Unlike pyrimidines, sugar first then base"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "ریبوز-۵-فسفات",
+          "en": "ribose-5-phosphate"
+         },
+         "explanation": {
+          "fa": "از شنت HMP می‌آید.",
+          "en": "Comes from the HMP shunt."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "PRPP",
+          "en": "PRPP"
+         },
+         "explanation": {
+          "fa": "فسفوریبوزیل پیروفسفات؛ برای ساخت و بازیافت لازم است.",
+          "en": "Phosphoribosyl pyrophosphate; needed for both synthesis and salvage."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "IMP",
+          "en": "IMP"
+         },
+         "explanation": {
+          "fa": "اینوزین مونوفسفات؛ حدواسط مشترک با باز هیپوگزانتین.",
+          "en": "Inosine monophosphate; the shared intermediate with the base hypoxanthine."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "prod",
+         "row": 3,
+         "label": {
+          "fa": "AMP",
+          "en": "AMP"
+         },
+         "explanation": {
+          "fa": "آدنوزین مونوفسفات.",
+          "en": "Adenosine monophosphate."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "prod",
+         "row": 3,
+         "label": {
+          "fa": "GMP",
+          "en": "GMP"
+         },
+         "explanation": {
+          "fa": "گوانوزین مونوفسفات.",
+          "en": "Guanosine monophosphate."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "PRPP سنتتاز",
+          "en": "PRPP synthetase"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "گلوتامین-PRPP آمینوترانسفراز — محدودکننده",
+          "en": "glutamine-PRPP amidotransferase — rate-limiting"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n4"
+        },
+        {
+         "from": "n3",
+         "to": "n5"
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "در ساخت پورین اول قند (ریبوز) ساخته می‌شود و بعد باز روی آن بنا می‌شود — برعکسِ ",
+         "en": "In purine synthesis the sugar (ribose) is built first and the base is assembled onto it — the reverse of "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "پیریمیدین‌ها",
+         "en": "pyrimidines"
+        },
+        "definition": {
+         "fa": "نوکلئوتیدهای تک‌حلقه‌ای که در آن‌ها اول حلقه و بعد قند اضافه می‌شود.",
+         "en": "The single-ring nucleotides, where the ring is made first and the sugar added after."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": ". نیتروژن‌ها از گلوتامین، آسپارتات و گلایسین می‌آیند و کربن‌ها از فولات و CO2.",
+         "en": ". The nitrogens come from glutamine, aspartate, and glycine, and the carbons from folate and CO2."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "بازیافت و تجزیه به اوریک‌اسید",
+        "en": "Salvage and breakdown to uric acid"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "هیپوگزانتین/گوانین",
+          "en": "hypoxanthine/guanine"
+         },
+         "explanation": {
+          "fa": "بازهای آزاد حاصل از تجزیهٔ نوکلئوتید.",
+          "en": "Free bases from nucleotide breakdown."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "prod",
+         "row": 1,
+         "label": {
+          "fa": "IMP / GMP (بازیافت)",
+          "en": "IMP / GMP (salvaged)"
+         },
+         "explanation": {
+          "fa": "با HGPRT و مصرف PRPP دوباره نوکلئوتید می‌شوند.",
+          "en": "Rebuilt into nucleotides by HGPRT, using PRPP."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "گزانتین",
+          "en": "xanthine"
+         },
+         "explanation": {
+          "fa": "مسیر تجزیه به‌جای بازیافت.",
+          "en": "The breakdown route instead of salvage."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "prod",
+         "row": 3,
+         "label": {
+          "fa": "اوریک‌اسید",
+          "en": "uric acid"
+         },
+         "explanation": {
+          "fa": "از کلیه دفع می‌شود؛ زیادی‌اش نقرس می‌دهد.",
+          "en": "Excreted by the kidney; excess causes gout."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "HGPRT (بازیافت)",
+          "en": "HGPRT (salvage)"
+         }
+        },
+        {
+         "from": "n1",
+         "to": "n3",
+         "label": {
+          "fa": "گزانتین اکسیداز",
+          "en": "xanthine oxidase"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n4",
+         "label": {
+          "fa": "گزانتین اکسیداز",
+          "en": "xanthine oxidase"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "ساخت داکسی‌نوکلئوتید",
+        "en": "Making deoxynucleotides"
+       },
+       "body": {
+        "fa": "ریبونوکلئوتید ردوکتاز گروه OH را برمی‌دارد تا داکسی‌نوکلئوتیدهای لازم برای DNA ساخته شوند. داروی هیدروکسی‌اوره این آنزیم را مهار می‌کند.",
+        "en": "Ribonucleotide reductase removes the OH group to make the deoxynucleotides needed for DNA. The drug hydroxyurea inhibits this enzyme."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "نقرس",
+        "en": "Gout"
+       },
+       "body": {
+        "fa": "اوریک‌اسید زیاد در پلاسما در مفاصل رسوب می‌کند — کلاسیک در انگشت شست پا. از کم‌دفع‌کردن (دیورتیک‌هایی مثل فوروزماید) یا پرتولید (چرخش سلولی بالا، غذای پرپورین مثل گوشت و غذای دریایی) ناشی می‌شود. درمان: آلوپورینول که گزانتین اکسیداز را مهار می‌کند.",
+        "en": "Excess plasma uric acid deposits in joints — classically the big toe. It comes from under-excretion (diuretics like furosemide) or overproduction (high cell turnover, purine-rich food like meat and seafood). Treatment: allopurinol, which inhibits xanthine oxidase."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "سندرم لش-نیهان",
+        "en": "Lesch-Nyhan syndrome"
+       },
+       "body": {
+        "fa": "کمبود آنزیم HGPRT (وابسته به X)؛ بازیافت پورین از کار می‌افتد و همه به اوریک‌اسید منحرف می‌شود. نقرس نوجوانی همراه با علائم عصبی: هیپوتونی، کره، و رفتار خودآزاری کلاسیک.",
+        "en": "HGPRT deficiency (X-linked); purine salvage fails and everything is shunted to uric acid. Juvenile gout plus neurologic signs: hypotonia, chorea, and classic self-mutilating behavior."
+       }
+      }
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "آنزیم بازیافت",
+         "en": "Salvage enzyme"
+        },
+        {
+         "fa": "باز(ها)",
+         "en": "Base(s)"
+        },
+        {
+         "fa": "محصول",
+         "en": "Product"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "HGPRT",
+          "en": "HGPRT"
+         },
+         {
+          "fa": "هیپوگزانتین، گوانین",
+          "en": "hypoxanthine, guanine"
+         },
+         {
+          "fa": "IMP، GMP",
+          "en": "IMP, GMP"
+         }
+        ],
+        [
+         {
+          "fa": "APRT",
+          "en": "APRT"
+         },
+         {
+          "fa": "آدنین",
+          "en": "adenine"
+         },
+         {
+          "fa": "AMP",
+          "en": "AMP"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "warn",
+       "title": {
+        "fa": "آلوپورینول + ۶-مرکاپتوپورین/آزاتیوپرین",
+        "en": "Allopurinol + 6-MP/azathioprine"
+       },
+       "body": {
+        "fa": "گزانتین اکسیداز این داروها را هم متابولیزه می‌کند؛ پس تجویز همزمان آلوپورینول سطح و سمیت آن‌ها را بالا می‌برد. دوز را باید کاهش داد.",
+        "en": "Xanthine oxidase also metabolizes these drugs, so giving allopurinol at the same time raises their levels and toxicity. The dose must be reduced."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "ریبوز-۵-فسفات → PRPP → IMP، سپس IMP به AMP یا GMP می‌رود.",
+        "en": "Ribose-5-phosphate → PRPP → IMP, then IMP goes to AMP or GMP."
+       },
+       {
+        "fa": "در پورین‌ها اول قند سپس باز ساخته می‌شود؛ نیتروژن از آمینواسیدها.",
+        "en": "In purines the sugar is built first, then the base; nitrogen from amino acids."
+       },
+       {
+        "fa": "بازهای آزاد با HGPRT/APRT بازیافت می‌شوند یا به اوریک‌اسید تجزیه.",
+        "en": "Free bases are salvaged by HGPRT/APRT or broken down to uric acid."
+       },
+       {
+        "fa": "اوریک‌اسید زیاد → نقرس؛ آلوپورینول گزانتین اکسیداز را مهار می‌کند.",
+        "en": "Excess uric acid → gout; allopurinol inhibits xanthine oxidase."
+       },
+       {
+        "fa": "کمبود HGPRT → سندرم لش-نیهان.",
+        "en": "HGPRT deficiency → Lesch-Nyhan syndrome."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "«ionisine» گفتاری به «اینوزین (inosine)» تصحیح شد.",
+       "en": "Corrected the spoken 'ionisine' to 'inosine'."
+      }
+     },
+     {
+      "index": 2,
+      "note": {
+       "fa": "«guanace» به آنزیم «گوانازِ (guanase)» تصحیح شد.",
+       "en": "Corrected 'guanace' to the enzyme 'guanase'."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "tca",
+   "title": {
+    "fa": "چرخهٔ TCA (کربس)",
+    "en": "TCA Cycle"
+   },
+   "subtitle": {
+    "fa": "دو کربن وارد، دو CO2 خارج — و چرا استیل‌CoA گلوکز نمی‌سازد",
+    "en": "Two carbons in, two CO2 out — and why acetyl-CoA cannot make glucose"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "چرخهٔ TCA (کربس)",
+     "en": "TCA Cycle"
+    },
+    "subtitle": {
+     "fa": "موتور مرکزی انرژی در میتوکندری، و منشأ NADH و FADH2",
+     "en": "The central energy engine in the mitochondria, and the source of NADH and FADH2"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "چرخهٔ TCA (TCA cycle)",
+         "en": "TCA cycle"
+        },
+        "definition": {
+         "fa": "چرخهٔ تری‌کربوکسیلیک‌اسید؛ همان چرخهٔ کربس یا سیتریک‌اسید.",
+         "en": "The tricarboxylic acid cycle; also the Krebs or citric acid cycle."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " در میتوکندری رخ می‌دهد و ",
+         "en": " runs in the mitochondria and converts "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "استیل‌CoA",
+         "en": "acetyl-CoA"
+        },
+        "definition": {
+         "fa": "واحد دوکربنی که سوخت ورودی چرخه است.",
+         "en": "The two-carbon unit that is the cycle's fuel input."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " را به CO2 تبدیل می‌کند و در این مسیر ۳ ",
+         "en": " to CO2, producing along the way 3 "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "NADH",
+         "en": "NADH"
+        },
+        "definition": {
+         "fa": "حامل الکترون برای زنجیرهٔ انتقال الکترون.",
+         "en": "Electron carrier for the electron transport chain."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": "، ۱ FADH2 و ۱ GTP به‌ازای هر استیل‌CoA می‌سازد.",
+         "en": ", 1 FADH2, and 1 GTP per acetyl-CoA."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "چرخهٔ TCA",
+        "en": "The TCA cycle"
+       },
+       "subtitle": {
+        "fa": "مالات به OAA برمی‌گردد و چرخه بسته می‌شود",
+        "en": "Malate returns to OAA, closing the loop"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "sub",
+         "row": 0,
+         "label": {
+          "fa": "اگزالواستات (OAA)",
+          "en": "oxaloacetate (OAA)"
+         },
+         "explanation": {
+          "fa": "با استیل‌CoA ترکیب می‌شود؛ همان مولکولی که برای گلوکونئوژنز هم لازم است.",
+          "en": "Combines with acetyl-CoA; also the molecule needed for gluconeogenesis."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "سیترات",
+          "en": "citrate"
+         },
+         "explanation": {
+          "fa": "نشانگر انرژی بالا؛ در سیتوزول سنتز اسید چرب را تحریک می‌کند.",
+          "en": "A high-energy signal; in the cytosol it drives fatty-acid synthesis."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "ایزوسیترات",
+          "en": "isocitrate"
+         },
+         "explanation": {
+          "fa": "ایزومر سیترات.",
+          "en": "An isomer of citrate."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "sub",
+         "row": 3,
+         "label": {
+          "fa": "آلفا-کتوگلوتارات",
+          "en": "alpha-ketoglutarate"
+         },
+         "explanation": {
+          "fa": "اولین NADH و اولین CO2 اینجا آزاد می‌شود.",
+          "en": "The first NADH and first CO2 are released here."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "sub",
+         "row": 4,
+         "label": {
+          "fa": "سوکسینیل‌CoA",
+          "en": "succinyl-CoA"
+         },
+         "explanation": {
+          "fa": "تقاطع با ساخت هِم و با اسید چرب فرد/آمینواسیدهای شاخه‌دار.",
+          "en": "A crossroads with heme synthesis and with odd-chain fatty acids/branched-chain amino acids."
+         }
+        },
+        {
+         "id": "n6",
+         "kind": "sub",
+         "row": 5,
+         "label": {
+          "fa": "سوکسینات",
+          "en": "succinate"
+         },
+         "explanation": {
+          "fa": "GTP اینجا ساخته می‌شود.",
+          "en": "GTP is made here."
+         }
+        },
+        {
+         "id": "n7",
+         "kind": "sub",
+         "row": 6,
+         "label": {
+          "fa": "فومارات",
+          "en": "fumarate"
+         },
+         "explanation": {
+          "fa": "تقاطع با چرخهٔ اوره و سنتز پورین.",
+          "en": "A crossroads with the urea cycle and purine synthesis."
+         }
+        },
+        {
+         "id": "n8",
+         "kind": "sub",
+         "row": 7,
+         "label": {
+          "fa": "مالات",
+          "en": "malate"
+         },
+         "explanation": {
+          "fa": "می‌تواند از میتوکندری خارج شود (شاتل مالات).",
+          "en": "Can leave the mitochondrion (the malate shuttle)."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "سیترات سنتاز (‎+استیل‌CoA)",
+          "en": "citrate synthase (+acetyl-CoA)"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "آکونیتاز",
+          "en": "aconitase"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n4",
+         "label": {
+          "fa": "ایزوسیترات دهیدروژناز (‎+NADH، ‎-CO2)",
+          "en": "isocitrate dehydrogenase (+NADH, -CO2)"
+         }
+        },
+        {
+         "from": "n4",
+         "to": "n5",
+         "label": {
+          "fa": "آلفا-کتوگلوتارات دهیدروژناز (‎+NADH، ‎-CO2)",
+          "en": "alpha-ketoglutarate dehydrogenase (+NADH, -CO2)"
+         }
+        },
+        {
+         "from": "n5",
+         "to": "n6",
+         "label": {
+          "fa": "سوکسینیل‌CoA سنتتاز (‎+GTP)",
+          "en": "succinyl-CoA synthetase (+GTP)"
+         }
+        },
+        {
+         "from": "n6",
+         "to": "n7",
+         "label": {
+          "fa": "سوکسینات دهیدروژناز = کمپلکس II (‎+FADH2)",
+          "en": "succinate dehydrogenase = Complex II (+FADH2)"
+         }
+        },
+        {
+         "from": "n7",
+         "to": "n8",
+         "label": {
+          "fa": "فوماراز",
+          "en": "fumarase"
+         }
+        },
+        {
+         "from": "n8",
+         "to": "n1",
+         "label": {
+          "fa": "مالات دهیدروژناز (‎+NADH)",
+          "en": "malate dehydrogenase (+NADH)"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "نکتهٔ بزرگ: استیل‌CoA دو کربن وارد چرخه می‌کند و دو کربن به‌صورت CO2 خارج می‌شود؛ پس مقدار خالص ",
+         "en": "The big point: acetyl-CoA brings two carbons in and two leave as CO2, so there is no net gain in "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "اگزالواستات",
+         "en": "oxaloacetate"
+        },
+        "definition": {
+         "fa": "پیش‌ساز گلوکز در گلوکونئوژنز؛ مقدارش با ورود استیل‌CoA زیاد نمی‌شود.",
+         "en": "The glucose precursor for gluconeogenesis; its amount does not rise from acetyl-CoA entering."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " زیاد نمی‌شود. به همین دلیل استیل‌CoA (و اسیدهای چرب زوج) نمی‌توانند به گلوکز تبدیل شوند.",
+         "en": ". This is exactly why acetyl-CoA (and even-chain fatty acids) cannot be turned into glucose."
+        }
+       }
+      ]
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "بازده هر استیل‌CoA",
+        "en": "Yield per acetyl-CoA"
+       },
+       "body": {
+        "fa": "هر دور چرخه به‌ازای یک استیل‌CoA: ۳ NADH، ۱ FADH2 و ۱ GTP. NADH و FADH2 مستقیماً به زنجیرهٔ انتقال الکترون می‌روند تا ATP بسازند.",
+        "en": "Each turn, per acetyl-CoA: 3 NADH, 1 FADH2, and 1 GTP. The NADH and FADH2 feed straight into the electron transport chain to make ATP."
+       }
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "تنظیم در گام‌های برگشت‌ناپذیر رخ می‌دهد. نشانگرهای انرژی بالا — ",
+         "en": "Regulation happens at the irreversible steps. High-energy signals — "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "ATP و NADH",
+         "en": "ATP and NADH"
+        },
+        "definition": {
+         "fa": "وقتی زیادند یعنی سلول انرژی کافی دارد و چرخه باید کند شود.",
+         "en": "When high, the cell has enough energy and the cycle should slow."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " — چرخه را کند می‌کنند، در حالی‌که ",
+         "en": " — slow the cycle, while "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "ADP و کلسیم",
+         "en": "ADP and calcium"
+        },
+        "definition": {
+         "fa": "نیاز به انرژی و انقباض عضله را نشان می‌دهند و چرخه را فعال می‌کنند.",
+         "en": "Signal energy demand and muscle contraction, and activate the cycle."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " آن را فعال می‌کنند.",
+         "en": " speed it up."
+        }
+       }
+      ]
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "آنزیم تنظیمی",
+         "en": "Regulated enzyme"
+        },
+        {
+         "fa": "مهار با",
+         "en": "Inhibited by"
+        },
+        {
+         "fa": "فعال با",
+         "en": "Activated by"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "سیترات سنتاز",
+          "en": "citrate synthase"
+         },
+         {
+          "fa": "ATP",
+          "en": "ATP"
+         },
+         {
+          "fa": "—",
+          "en": "—"
+         }
+        ],
+        [
+         {
+          "fa": "ایزوسیترات دهیدروژناز",
+          "en": "isocitrate dehydrogenase"
+         },
+         {
+          "fa": "ATP، NADH",
+          "en": "ATP, NADH"
+         },
+         {
+          "fa": "ADP، کلسیم",
+          "en": "ADP, calcium"
+         }
+        ],
+        [
+         {
+          "fa": "آلفا-کتوگلوتارات دهیدروژناز",
+          "en": "alpha-ketoglutarate dehydrogenase"
+         },
+         {
+          "fa": "NADH، سوکسینیل‌CoA",
+          "en": "NADH, succinyl-CoA"
+         },
+         {
+          "fa": "کلسیم",
+          "en": "calcium"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "چرا ناشتایی کتون می‌سازد",
+        "en": "Why fasting makes ketones"
+       },
+       "body": {
+        "fa": "در ناشتایی OAA به سمت گلوکونئوژنز کشیده می‌شود، پس OAA کمتری برای گرفتن استیل‌CoA می‌ماند. استیل‌CoA تلنبار می‌شود و کبد آن را به اجسام کتونی تبدیل می‌کند.",
+        "en": "In fasting, OAA is pulled toward gluconeogenesis, leaving less OAA to accept acetyl-CoA. Acetyl-CoA piles up and the liver converts it to ketone bodies."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "سوکسینات دهیدروژناز = کمپلکس II",
+        "en": "Succinate dehydrogenase = Complex II"
+       },
+       "body": {
+        "fa": "تنها آنزیم چرخه که در غشای میتوکندری جای دارد؛ همزمان عضوی از زنجیرهٔ انتقال الکترون است و FADH2 می‌سازد.",
+        "en": "The only cycle enzyme embedded in the mitochondrial membrane; it doubles as a member of the electron transport chain and makes FADH2."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "استیل‌CoA با OAA ترکیب و سیترات ساخته می‌شود.",
+        "en": "Acetyl-CoA combines with OAA to form citrate."
+       },
+       {
+        "fa": "دو CO2 خارج می‌شود؛ پس OAA خالص زیاد نمی‌شود و گلوکز از استیل‌CoA ساخته نمی‌شود.",
+        "en": "Two CO2 leave; net OAA does not rise, so glucose cannot be made from acetyl-CoA."
+       },
+       {
+        "fa": "هر دور: ۳ NADH، ۱ FADH2، ۱ GTP.",
+        "en": "Each turn: 3 NADH, 1 FADH2, 1 GTP."
+       },
+       {
+        "fa": "تنظیم در سیترات سنتاز، ایزوسیترات‌DH و آلفا-کتوگلوتارات‌DH است.",
+        "en": "Regulation is at citrate synthase, isocitrate DH, and alpha-ketoglutarate DH."
+       },
+       {
+        "fa": "ATP/NADH کند می‌کنند؛ ADP/کلسیم فعال می‌کنند.",
+        "en": "ATP/NADH slow it; ADP/calcium activate it."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "fatty-acids",
+   "title": {
+    "fa": "اسیدهای چرب",
+    "en": "Fatty Acids"
+   },
+   "subtitle": {
+    "fa": "ساخت، ذخیره و بتا-اکسیداسیون؛ شاتل کارنیتین و کمبودها",
+    "en": "Synthesis, storage, and beta oxidation; the carnitine shuttle and its deficiencies"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "اسیدهای چرب",
+     "en": "Fatty Acids"
+    },
+    "subtitle": {
+     "fa": "ساخت در سیتوزول، سوختن در میتوکندری، و دری که کارنیتین باز می‌کند",
+     "en": "Built in the cytosol, burned in the mitochondria, and the door carnitine opens"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "اسیدهای چرب (fatty acids)",
+         "en": "fatty acids"
+        },
+        "definition": {
+         "fa": "زنجیره‌های پرانرژی کربن-هیدروژن؛ در خون آزاد (با آلبومین) یا به‌صورت تری‌گلیسرید حمل می‌شوند.",
+         "en": "Energy-dense carbon-hydrogen chains; carried in blood free (on albumin) or as triglyceride."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " منبع بزرگ انرژی‌اند. ساخت آن‌ها در سیتوزول (بیشتر کبد) و شکستن‌شان با ",
+         "en": " are a major energy source. They are synthesized in the cytosol (mostly liver) and broken down by "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "بتا-اکسیداسیون",
+         "en": "beta oxidation"
+        },
+        "definition": {
+         "fa": "برداشتن پی‌درپیِ دو کربن از زنجیره؛ استیل‌CoA، NADH و FADH2 می‌سازد.",
+         "en": "Stepwise removal of two carbons; yields acetyl-CoA, NADH, and FADH2."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " در میتوکندری انجام می‌شود.",
+         "en": " in the mitochondria."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "سنتز اسید چرب (سیتوزول)",
+        "en": "Fatty-acid synthesis (cytosol)"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "sub",
+         "row": 0,
+         "label": {
+          "fa": "سیترات",
+          "en": "citrate"
+         },
+         "explanation": {
+          "fa": "استیل‌CoA را از میتوکندری به سیتوزول می‌برد (استیل‌CoA خودش نمی‌تواند خارج شود).",
+          "en": "Carries acetyl-CoA out of the mitochondrion (acetyl-CoA itself cannot cross)."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "استیل‌CoA (سیتوزول)",
+          "en": "acetyl-CoA (cytosol)"
+         },
+         "explanation": {
+          "fa": "با ATP-سیترات لیاز آزاد می‌شود.",
+          "en": "Released by ATP-citrate lyase."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "مالونیل‌CoA",
+          "en": "malonyl-CoA"
+         },
+         "explanation": {
+          "fa": "گام محدودکنندهٔ سرعت؛ همچنین بتا-اکسیداسیون را مهار می‌کند.",
+          "en": "The rate-limiting step; it also inhibits beta oxidation."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "prod",
+         "row": 3,
+         "label": {
+          "fa": "پالمیتات",
+          "en": "palmitate"
+         },
+         "explanation": {
+          "fa": "اسید چرب ۱۶ کربنه؛ ساخته‌شده با فتی‌اسید سنتاز و مصرف NADPH.",
+          "en": "The 16-carbon fatty acid; made by fatty acid synthase using NADPH."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "ATP-سیترات لیاز",
+          "en": "ATP-citrate lyase"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "استیل‌CoA کربوکسیلاز (ACC) — محدودکننده، بیوتین",
+          "en": "acetyl-CoA carboxylase (ACC) — rate-limiting, biotin"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n4",
+         "label": {
+          "fa": "فتی‌اسید سنتاز (NADPH)",
+          "en": "fatty acid synthase (NADPH)"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "استیل‌CoA کربوکسیلاز (ACC)",
+         "en": "acetyl-CoA carboxylase (ACC)"
+        },
+        "definition": {
+         "fa": "گام محدودکنندهٔ سنتز اسید چرب؛ مالونیل‌CoA می‌سازد.",
+         "en": "The rate-limiting step of fatty-acid synthesis; makes malonyl-CoA."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " با سیترات و انسولین فعال و با گلوکاگون و اپی‌نفرین مهار می‌شود. محصول آن ",
+         "en": " is activated by citrate and insulin and inhibited by glucagon and epinephrine. Its product "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "مالونیل‌CoA",
+         "en": "malonyl-CoA"
+        },
+        "definition": {
+         "fa": "بتا-اکسیداسیون را مهار می‌کند تا ساخت و سوختن همزمان رخ ندهد.",
+         "en": "Inhibits beta oxidation so synthesis and breakdown do not run at once."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " بتا-اکسیداسیون را مهار می‌کند — پس بدن هم‌زمان اسید چرب نمی‌سازد و نمی‌سوزاند.",
+         "en": " inhibits beta oxidation — so the body does not build and burn fatty acids simultaneously."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "شاتل کارنیتین و بتا-اکسیداسیون",
+        "en": "The carnitine shuttle and beta oxidation"
+       },
+       "subtitle": {
+        "fa": "دروازهٔ ورود اسید چرب بلندزنجیر به میتوکندری",
+        "en": "The gateway for long-chain fatty acids into the mitochondrion"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "sub",
+         "row": 0,
+         "label": {
+          "fa": "فتی‌اسیل‌CoA (سیتوزول)",
+          "en": "fatty acyl-CoA (cytosol)"
+         },
+         "explanation": {
+          "fa": "نمی‌تواند مستقیم وارد ماتریکس شود.",
+          "en": "Cannot enter the matrix directly."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "آسیل‌کارنیتین",
+          "en": "acylcarnitine"
+         },
+         "explanation": {
+          "fa": "با CPT-1 ساخته می‌شود؛ مالونیل‌CoA این آنزیم را مهار می‌کند.",
+          "en": "Made by CPT-1; malonyl-CoA inhibits this enzyme."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "فتی‌اسیل‌CoA (ماتریکس)",
+          "en": "fatty acyl-CoA (matrix)"
+         },
+         "explanation": {
+          "fa": "با CPT-2 بازساخته می‌شود.",
+          "en": "Reformed by CPT-2."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "prod",
+         "row": 3,
+         "label": {
+          "fa": "استیل‌CoA (‎+NADH، ‎+FADH2)",
+          "en": "acetyl-CoA (+NADH, +FADH2)"
+         },
+         "explanation": {
+          "fa": "هر دور بتا-اکسیداسیون دو کربن کم می‌کند.",
+          "en": "Each beta-oxidation cycle shortens the chain by two carbons."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "CPT-1 (کارنیتین) — مهار با مالونیل‌CoA",
+          "en": "CPT-1 (carnitine) — inhibited by malonyl-CoA"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "عبور به ماتریکس",
+          "en": "into the matrix"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n4",
+         "label": {
+          "fa": "بتا-اکسیداسیون",
+          "en": "beta oxidation"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "کمبود کارنیتین",
+        "en": "Carnitine deficiency"
+       },
+       "body": {
+        "fa": "بدون کارنیتین، اسید چرب بلندزنجیر وارد میتوکندری نمی‌شود. نتیجه: ضعف عضلانی (به‌ویژه با ورزش)، کاردیومیوپاتی، و هیپوگلیسمیِ هیپوکتوتیک هنگام ناشتایی.",
+        "en": "Without carnitine, long-chain fatty acids cannot enter the mitochondrion. Result: muscle weakness (especially with exercise), cardiomyopathy, and hypoketotic hypoglycemia when fasting."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "کمبود MCAD",
+        "en": "MCAD deficiency"
+       },
+       "body": {
+        "fa": "کمبود آسیل‌CoA دهیدروژناز زنجیرمتوسط (اتوزومال مغلوب): اسید چرب ۶ تا ۱۰ کربنه اکسید نمی‌شود. هیپوگلیسمیِ بدون کتون هنگام ناشتایی، اسیدهای دی‌کربوکسیلیک در ادرار، و آسیل‌کارنیتین بالا. درمان: پرهیز از ناشتایی.",
+        "en": "Medium-chain acyl-CoA dehydrogenase deficiency (autosomal recessive): 6–10 carbon fatty acids cannot be oxidized. Fasting hypoglycemia without ketones, dicarboxylic aciduria, and high acylcarnitine. Treatment: avoid fasting."
+       }
+      }
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "ویژگی",
+         "en": "Feature"
+        },
+        {
+         "fa": "اسید چرب زوج",
+         "en": "Even-chain FA"
+        },
+        {
+         "fa": "اسید چرب فرد",
+         "en": "Odd-chain FA"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "محصول نهایی",
+          "en": "Final product"
+         },
+         {
+          "fa": "فقط استیل‌CoA",
+          "en": "acetyl-CoA only"
+         },
+         {
+          "fa": "استیل‌CoA + پروپیونیل‌CoA",
+          "en": "acetyl-CoA + propionyl-CoA"
+         }
+        ],
+        [
+         {
+          "fa": "می‌تواند گلوکز بسازد؟",
+          "en": "Can make glucose?"
+         },
+         {
+          "fa": "خیر",
+          "en": "No"
+         },
+         {
+          "fa": "بله (از راه سوکسینیل‌CoA)",
+          "en": "Yes (via succinyl-CoA)"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "سرنوشت اسید چرب فرد",
+        "en": "Fate of odd-chain fatty acids"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "sub",
+         "row": 0,
+         "label": {
+          "fa": "پروپیونیل‌CoA",
+          "en": "propionyl-CoA"
+         },
+         "explanation": {
+          "fa": "سه کربن باقی‌مانده در انتهای اکسیداسیون اسید چرب فرد.",
+          "en": "The three carbons left at the end of odd-chain oxidation."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "متیل‌مالونیل‌CoA",
+          "en": "methylmalonyl-CoA"
+         },
+         "explanation": {
+          "fa": "با کربوکسیلاز وابسته به بیوتین ساخته می‌شود.",
+          "en": "Made by a biotin-dependent carboxylase."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "prod",
+         "row": 2,
+         "label": {
+          "fa": "سوکسینیل‌CoA → TCA",
+          "en": "succinyl-CoA → TCA"
+         },
+         "explanation": {
+          "fa": "وارد چرخهٔ TCA می‌شود و می‌تواند به گلوکز برسد.",
+          "en": "Enters the TCA cycle and can reach glucose."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "پروپیونیل‌CoA کربوکسیلاز (بیوتین)",
+          "en": "propionyl-CoA carboxylase (biotin)"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "متیل‌مالونیل‌CoA موتاز (B12)",
+          "en": "methylmalonyl-CoA mutase (B12)"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "پیوند با ویتامین B12",
+        "en": "The vitamin B12 link"
+       },
+       "body": {
+        "fa": "تبدیل متیل‌مالونیل‌CoA به سوکسینیل‌CoA به B12 نیاز دارد؛ در کمبود B12 سطح اسید متیل‌مالونیک (MMA) بالا می‌رود — نشانگر کلیدی برای افتراق کمبود B12 از فولات.",
+        "en": "Converting methylmalonyl-CoA to succinyl-CoA needs B12; in B12 deficiency methylmalonic acid (MMA) rises — a key marker distinguishing B12 from folate deficiency."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "سیترات استیل‌CoA را به سیتوزول می‌برد؛ ACC مالونیل‌CoA می‌سازد (گام محدودکننده).",
+        "en": "Citrate carries acetyl-CoA to the cytosol; ACC makes malonyl-CoA (rate-limiting)."
+       },
+       {
+        "fa": "فتی‌اسید سنتاز با NADPH پالمیتات می‌سازد؛ اضافه‌اش تری‌گلیسرید می‌شود.",
+        "en": "Fatty acid synthase makes palmitate using NADPH; the excess becomes triglyceride."
+       },
+       {
+        "fa": "شاتل کارنیتین (CPT-1/CPT-2) اسید چرب را وارد میتوکندری می‌کند؛ مالونیل‌CoA مهارش می‌کند.",
+        "en": "The carnitine shuttle (CPT-1/CPT-2) imports fatty acids; malonyl-CoA inhibits it."
+       },
+       {
+        "fa": "کمبود کارنیتین یا MCAD → هیپوگلیسمیِ هیپوکتوتیک هنگام ناشتایی.",
+        "en": "Carnitine or MCAD deficiency → hypoketotic hypoglycemia when fasting."
+       },
+       {
+        "fa": "اسید چرب فرد → پروپیونیل‌CoA → سوکسینیل‌CoA (B12) و می‌تواند گلوکز بسازد.",
+        "en": "Odd-chain FA → propionyl-CoA → succinyl-CoA (B12) and can make glucose."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "«acetylcholine» در ترنسکریپت به «استیل‌CoA (acetyl-CoA)» تصحیح شد (در بحث MCAD).",
+       "en": "Corrected the transcript's 'acetylcholine' to 'acetyl-CoA' (in the MCAD discussion)."
+      }
+     },
+     {
+      "index": 2,
+      "note": {
+       "fa": "«ACL carnitine» به «آسیل‌کارنیتین (acylcarnitine)» تصحیح شد.",
+       "en": "Corrected 'ACL carnitine' to 'acylcarnitine'."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "pyrimidines",
+   "title": {
+    "fa": "متابولیسم پیریمیدین‌ها",
+    "en": "Pyrimidine Metabolism"
+   },
+   "subtitle": {
+    "fa": "اول حلقه سپس قند؛ سنتز تیمیدین، فولات و داروها",
+    "en": "Ring first then sugar; thymidine synthesis, folate, and the drugs"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "متابولیسم پیریمیدین‌ها",
+     "en": "Pyrimidine Metabolism"
+    },
+    "subtitle": {
+     "fa": "اول حلقه سپس قند؛ و چرا فولات و B12 برای تیمیدین حیاتی‌اند",
+     "en": "Ring first then sugar; and why folate and B12 are vital for thymidine"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "پیریمیدین‌ها (pyrimidines)",
+         "en": "pyrimidines"
+        },
+        "definition": {
+         "fa": "نوکلئوتیدهای تک‌حلقه‌ای: سیتیدین، تیمیدین و یوریدین.",
+         "en": "The single-ring nucleotides: cytidine, thymidine, and uridine."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " یک حلقه دارند. برخلاف پورین‌ها، اول حلقه ساخته و بعد قند اضافه می‌شود، و همه از ",
+         "en": " have one ring. Unlike purines, the ring is built first and the sugar added after, and all derive from "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "یوریدین مونوفسفات (UMP)",
+         "en": "uridine monophosphate (UMP)"
+        },
+        "definition": {
+         "fa": "اولین پیریمیدینِ ساخته‌شده؛ CMP و TMP از آن مشتق می‌شوند.",
+         "en": "The first pyrimidine made; CMP and TMP are derived from it."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " مشتق می‌شوند.",
+         "en": "."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "سنتز پیریمیدین",
+        "en": "Pyrimidine synthesis"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "گلوتامین + CO2",
+          "en": "glutamine + CO2"
+         },
+         "explanation": {
+          "fa": "مواد اولیه برای کاربامویل‌فسفات.",
+          "en": "Starting materials for carbamoyl phosphate."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "کاربامویل‌فسفات",
+          "en": "carbamoyl phosphate"
+         },
+         "explanation": {
+          "fa": "با CPS-II در سیتوزول (نه CPS-I میتوکندری در چرخهٔ اوره).",
+          "en": "Made by CPS-II in the cytosol (not mitochondrial CPS-I of the urea cycle)."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "اوروتیک‌اسید",
+          "en": "orotic acid"
+         },
+         "explanation": {
+          "fa": "بخش یوراسیل نوکلئوتید همین‌جا شکل می‌گیرد.",
+          "en": "The uracil part of the nucleotide takes shape here."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "prod",
+         "row": 3,
+         "label": {
+          "fa": "UMP",
+          "en": "UMP"
+         },
+         "explanation": {
+          "fa": "پس از افزودن قند (PRPP) با آنزیم UMP سنتاز.",
+          "en": "After the sugar (PRPP) is added by UMP synthase."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "کاربامویل‌فسفات سنتتاز II (CPS-II) — محدودکننده",
+          "en": "carbamoyl phosphate synthetase II (CPS-II) — rate-limiting"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "چند گام",
+          "en": "several steps"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n4",
+         "label": {
+          "fa": "UMP سنتاز (‎+PRPP)",
+          "en": "UMP synthase (+PRPP)"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "گام محدودکنندهٔ سرعت ",
+         "en": "The rate-limiting step is "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "CPS-II",
+         "en": "CPS-II"
+        },
+        "definition": {
+         "fa": "کاربامویل‌فسفات سنتتاز II در سیتوزول؛ با UTP مهار می‌شود.",
+         "en": "Carbamoyl phosphate synthetase II in the cytosol; inhibited by UTP."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " در سیتوزول است — آن را با ",
+         "en": " in the cytosol — do not confuse it with "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "CPS-I",
+         "en": "CPS-I"
+        },
+        "definition": {
+         "fa": "کاربامویل‌فسفات سنتتاز I در میتوکندری؛ متعلق به چرخهٔ اوره.",
+         "en": "Carbamoyl phosphate synthetase I in the mitochondria; belongs to the urea cycle."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " (میتوکندری، چرخهٔ اوره) اشتباه نگیرید. در پیریمیدین‌ها اول حلقه و بعد قند اضافه می‌شود.",
+         "en": " (mitochondrial, urea cycle). In pyrimidines the ring is built first, then the sugar is added."
+        }
+       }
+      ]
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "اوروتیک‌اسیدوری (کلید: حرف U)",
+        "en": "Orotic aciduria (key: the letter U)"
+       },
+       "body": {
+        "fa": "نقص آنزیم UMP سنتاز (اتوزومال مغلوب): اوروتیک‌اسید در ادرار، و کم‌خونی مگالوبلاستیک که با B12 یا فولات درست نمی‌شود، به‌همراه کندی رشد. درمان: دادن یوریدین که آنزیم را دور می‌زند.",
+        "en": "A UMP synthase defect (autosomal recessive): orotic acid in the urine, plus a megaloblastic anemia that is NOT corrected by B12 or folate, with growth retardation. Treatment: give uridine, which bypasses the enzyme."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "warn",
+       "title": {
+        "fa": "افتراق از کمبود OTC",
+        "en": "Distinguish from OTC deficiency"
+       },
+       "body": {
+        "fa": "کمبود اورنیتین ترانس‌کربامیلاز (OTC) هم اوروتیک‌اسید را بالا می‌برد، اما چون اختلال چرخهٔ اوره است، آمونیاک هم بالا می‌رود و آنسفالوپاتی می‌دهد. آمونیاکِ بالا = OTC، نه اوروتیک‌اسیدوری.",
+        "en": "Ornithine transcarbamylase (OTC) deficiency also raises orotic acid, but because it is a urea-cycle defect, ammonia rises too and causes encephalopathy. High ammonia = OTC, not orotic aciduria."
+       }
+      }
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "ساخت تیمیدین (dTMP)",
+        "en": "Making thymidine (dTMP)"
+       },
+       "subtitle": {
+        "fa": "افزودن یک کربن از فولات به یوریدین",
+        "en": "Adding one carbon from folate onto uridine"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "sub",
+         "row": 0,
+         "label": {
+          "fa": "dUDP",
+          "en": "dUDP"
+         },
+         "explanation": {
+          "fa": "با ریبونوکلئوتید ردوکتاز از UDP ساخته می‌شود (هدف هیدروکسی‌اوره).",
+          "en": "Made from UDP by ribonucleotide reductase (the target of hydroxyurea)."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "dUMP",
+          "en": "dUMP"
+         },
+         "explanation": {
+          "fa": "پیش‌ماده برای تیمیدیلات سنتاز.",
+          "en": "The substrate for thymidylate synthase."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "prod",
+         "row": 2,
+         "label": {
+          "fa": "dTMP",
+          "en": "dTMP"
+         },
+         "explanation": {
+          "fa": "تیمیدین؛ فقط در DNA به‌کار می‌رود.",
+          "en": "Thymidine; used only in DNA."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "حذف فسفات",
+          "en": "remove phosphate"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "تیمیدیلات سنتاز (N5,N10-تتراهیدروفولات)",
+          "en": "thymidylate synthase (N5,N10-tetrahydrofolate)"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "دارو",
+         "en": "Drug"
+        },
+        {
+         "fa": "آنزیم هدف",
+         "en": "Target enzyme"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "۵-فلوئورویوراسیل (5-FU)",
+          "en": "5-fluorouracil (5-FU)"
+         },
+         {
+          "fa": "تیمیدیلات سنتاز",
+          "en": "thymidylate synthase"
+         }
+        ],
+        [
+         {
+          "fa": "متوترکسات",
+          "en": "methotrexate"
+         },
+         {
+          "fa": "دی‌هیدروفولات ردوکتاز (انسانی)",
+          "en": "dihydrofolate reductase (human)"
+         }
+        ],
+        [
+         {
+          "fa": "تری‌متوپریم",
+          "en": "trimethoprim"
+         },
+         {
+          "fa": "دی‌هیدروفولات ردوکتاز (باکتریایی)",
+          "en": "dihydrofolate reductase (bacterial)"
+         }
+        ],
+        [
+         {
+          "fa": "هیدروکسی‌اوره",
+          "en": "hydroxyurea"
+         },
+         {
+          "fa": "ریبونوکلئوتید ردوکتاز",
+          "en": "ribonucleotide reductase"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "تلهٔ متیل‌فولات (پیوند B12/فولات)",
+        "en": "The methyl-folate trap (the B12/folate link)"
+       },
+       "body": {
+        "fa": "برای ساخت تیمیدین باید N5,N10-تتراهیدروفولات را تأمین کرد. کمبود B12 فولات را در فرم N5-متیل به دام می‌اندازد، پس تیمیدین کم و کم‌خونی مگالوبلاستیک ایجاد می‌شود. هوموسیستئین در هر دو کمبود بالاست؛ اما MMA فقط در کمبود B12 بالا می‌رود.",
+        "en": "Making thymidine requires N5,N10-tetrahydrofolate. B12 deficiency traps folate as N5-methyl, so thymidine falls and a megaloblastic anemia develops. Homocysteine is high in both deficiencies; but MMA rises only in B12 deficiency."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "گلوتامین → کاربامویل‌فسفات (CPS-II) → اوروتیک‌اسید → UMP.",
+        "en": "Glutamine → carbamoyl phosphate (CPS-II) → orotic acid → UMP."
+       },
+       {
+        "fa": "در پیریمیدین‌ها اول حلقه و بعد قند (PRPP) اضافه می‌شود.",
+        "en": "In pyrimidines the ring is built first, then the sugar (PRPP) is added."
+       },
+       {
+        "fa": "اوروتیک‌اسیدوری (نقص UMP سنتاز) با یوریدین درمان می‌شود؛ آمونیاک نرمال است.",
+        "en": "Orotic aciduria (UMP synthase defect) is treated with uridine; ammonia is normal."
+       },
+       {
+        "fa": "تیمیدیلات سنتاز با فولات، dUMP را به dTMP تبدیل می‌کند.",
+        "en": "Thymidylate synthase, using folate, converts dUMP to dTMP."
+       },
+       {
+        "fa": "5-FU، متوترکسات، تری‌متوپریم و هیدروکسی‌اوره این مسیر را مهار می‌کنند.",
+        "en": "5-FU, methotrexate, trimethoprim, and hydroxyurea block this pathway."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "«primitive» گفتاری (تشخیص گفتار) به «پیریمیدین (pyrimidine)» تصحیح شد.",
+       "en": "Corrected the speech-to-text 'primitive' to 'pyrimidine'."
+      }
+     },
+     {
+      "index": 2,
+      "note": {
+       "fa": "«de hydrofolate» به «دی‌هیدروفولات ردوکتاز (dihydrofolate reductase)» تصحیح شد.",
+       "en": "Corrected 'de hydrofolate' to 'dihydrofolate reductase'."
+      }
+     }
+    ]
+   }
+  }
+ ]
+}
