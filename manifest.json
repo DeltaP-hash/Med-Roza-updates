@@ -1,5 +1,5 @@
 {
- "contentVersion": 1,
+ "contentVersion": 2,
  "lessons": [
   {
    "courseID": "ethanol",
@@ -3780,6 +3780,436 @@
       "note": {
        "fa": "«de hydrofolate» به «دی‌هیدروفولات ردوکتاز (dihydrofolate reductase)» تصحیح شد.",
        "en": "Corrected 'de hydrofolate' to 'dihydrofolate reductase'."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "etc",
+   "title": {
+    "fa": "زنجیرهٔ انتقال الکترون",
+    "en": "Electron Transport Chain"
+   },
+   "subtitle": {
+    "fa": "چهار کمپلکس، شیب پروتون، و سموم فسفوریلاسیون اکسیداتیو",
+    "en": "Four complexes, the proton gradient, and the poisons of oxidative phosphorylation"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "زنجیرهٔ انتقال الکترون",
+     "en": "Electron Transport Chain"
+    },
+    "subtitle": {
+     "fa": "الکترون‌ها به اکسیژن می‌رسند و شیب پروتون، ATP می‌سازد",
+     "en": "Electrons reach oxygen and a proton gradient makes ATP"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "زنجیرهٔ انتقال الکترون (ETC)",
+         "en": "electron transport chain (ETC)"
+        },
+        "definition": {
+         "fa": "مجموعهٔ کمپلکس‌های غشای داخلی میتوکندری که الکترون‌های NADH و FADH2 را به اکسیژن می‌رسانند و ATP می‌سازند.",
+         "en": "The inner-mitochondrial-membrane complexes that pass electrons from NADH and FADH2 to oxygen and make ATP."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " الکترون‌های حامل‌های ",
+         "en": " takes the electrons from the carriers "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "NADH و FADH2",
+         "en": "NADH and FADH2"
+        },
+        "definition": {
+         "fa": "حامل‌های الکترون از گلیکولیز، چرخهٔ TCA و بتا-اکسیداسیون.",
+         "en": "Electron carriers from glycolysis, the TCA cycle, and beta oxidation."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " را می‌گیرد و در حین رساندن آن‌ها به اکسیژن، پروتون‌ها را به فضای بین‌غشایی پمپ می‌کند تا شیبی برای ساخت ATP بسازد.",
+         "en": ", and while delivering them to oxygen it pumps protons into the intermembrane space, building the gradient that powers ATP synthesis."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "مسیر الکترون‌ها تا اکسیژن",
+        "en": "The path of electrons to oxygen"
+       },
+       "subtitle": {
+        "fa": "کمپلکس‌های I، III و IV پروتون پمپ می‌کنند",
+        "en": "Complexes I, III, and IV pump protons"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "NADH",
+          "en": "NADH"
+         },
+         "explanation": {
+          "fa": "الکترون‌ها را به کمپلکس I می‌دهد.",
+          "en": "Donates its electrons to Complex I."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "FADH2",
+          "en": "FADH2"
+         },
+         "explanation": {
+          "fa": "الکترون‌ها را به کمپلکس II می‌دهد؛ ATP کمتری می‌سازد چون از کمپلکس I رد می‌شود.",
+          "en": "Donates electrons to Complex II; yields less ATP because it bypasses Complex I."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "enz",
+         "row": 1,
+         "label": {
+          "fa": "کمپلکس I",
+          "en": "Complex I"
+         },
+         "explanation": {
+          "fa": "NADH دهیدروژناز؛ پروتون پمپ می‌کند.",
+          "en": "NADH dehydrogenase; pumps protons."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "enz",
+         "row": 1,
+         "label": {
+          "fa": "کمپلکس II",
+          "en": "Complex II"
+         },
+         "explanation": {
+          "fa": "سوکسینات دهیدروژناز — همان آنزیم چرخهٔ TCA؛ پروتون پمپ نمی‌کند.",
+          "en": "Succinate dehydrogenase — the same TCA enzyme; does not pump protons."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "کوآنزیم Q (CoQ)",
+          "en": "coenzyme Q (CoQ)"
+         },
+         "explanation": {
+          "fa": "الکترون‌ها را از کمپلکس I و II به کمپلکس III می‌برد.",
+          "en": "Shuttles electrons from Complexes I and II to Complex III."
+         }
+        },
+        {
+         "id": "n6",
+         "kind": "enz",
+         "row": 3,
+         "label": {
+          "fa": "کمپلکس III",
+          "en": "Complex III"
+         },
+         "explanation": {
+          "fa": "سیتوکروم bc1؛ پروتون پمپ می‌کند.",
+          "en": "Cytochrome bc1; pumps protons."
+         }
+        },
+        {
+         "id": "n7",
+         "kind": "sub",
+         "row": 4,
+         "label": {
+          "fa": "سیتوکروم c",
+          "en": "cytochrome c"
+         },
+         "explanation": {
+          "fa": "الکترون‌ها را از کمپلکس III به IV می‌برد.",
+          "en": "Carries electrons from Complex III to IV."
+         }
+        },
+        {
+         "id": "n8",
+         "kind": "enz",
+         "row": 5,
+         "label": {
+          "fa": "کمپلکس IV",
+          "en": "Complex IV"
+         },
+         "explanation": {
+          "fa": "سیتوکروم c اکسیداز؛ الکترون را به اکسیژن می‌دهد و پروتون پمپ می‌کند.",
+          "en": "Cytochrome c oxidase; hands electrons to oxygen and pumps protons."
+         }
+        },
+        {
+         "id": "n9",
+         "kind": "prod",
+         "row": 6,
+         "label": {
+          "fa": "آب (O2 → H2O)",
+          "en": "water (O2 → H2O)"
+         },
+         "explanation": {
+          "fa": "اکسیژن پذیرندهٔ نهایی الکترون است؛ برای همین این تنفس هوازی است.",
+          "en": "Oxygen is the final electron acceptor — which is why this is aerobic respiration."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n3"
+        },
+        {
+         "from": "n2",
+         "to": "n4"
+        },
+        {
+         "from": "n3",
+         "to": "n5",
+         "label": {
+          "fa": "‎+H⁺ پمپ",
+          "en": "+H⁺ pumped"
+         }
+        },
+        {
+         "from": "n4",
+         "to": "n5"
+        },
+        {
+         "from": "n5",
+         "to": "n6"
+        },
+        {
+         "from": "n6",
+         "to": "n7",
+         "label": {
+          "fa": "‎+H⁺ پمپ",
+          "en": "+H⁺ pumped"
+         }
+        },
+        {
+         "from": "n7",
+         "to": "n8"
+        },
+        {
+         "from": "n8",
+         "to": "n9",
+         "label": {
+          "fa": "‎+H⁺ پمپ",
+          "en": "+H⁺ pumped"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "پروتون‌های پمپ‌شده در فضای بین‌غشایی تجمع می‌کنند و از راه ",
+         "en": "The pumped protons accumulate in the intermembrane space and flow back through "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "ATP سنتاز (کمپلکس V)",
+         "en": "ATP synthase (Complex V)"
+        },
+        "definition": {
+         "fa": "آنزیمی که با عبور پروتون‌ها از شیب، ADP را به ATP تبدیل می‌کند (فسفوریلاسیون اکسیداتیو).",
+         "en": "The enzyme that turns ADP into ATP as protons flow down the gradient (oxidative phosphorylation)."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " برمی‌گردند و ATP می‌سازند. به این استفاده از شیب الکتروشیمیایی، ",
+         "en": " to make ATP. Using this electrochemical gradient is called "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "کموئوسموز",
+         "en": "chemiosmosis"
+        },
+        "definition": {
+         "fa": "حرکت پروتون‌ها در جهت شیب غلظت برای تولید ATP.",
+         "en": "Protons moving down their concentration gradient to generate ATP."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " گفته می‌شود.",
+         "en": "."
+        }
+       }
+      ]
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "بازده ATP",
+        "en": "ATP yield"
+       },
+       "body": {
+        "fa": "با نسبت‌های P/O جدید، هر NADH حدود ۲٫۵ ATP و هر FADH2 حدود ۱٫۵ ATP می‌دهد. در مجموع هر گلوکز حدود ۳۰ تا ۳۲ ATP تولید می‌کند — بسته به اینکه کدام شاتل (مالات یا گلیسرول-فسفات) استفاده شود.",
+        "en": "With the newer P/O ratios, each NADH yields ~2.5 ATP and each FADH2 ~1.5 ATP. In total a glucose makes about 30–32 ATP — depending on which shuttle (malate or glycerol-phosphate) is used."
+       }
+      }
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "نوع سم",
+         "en": "Type"
+        },
+        {
+         "fa": "مثال",
+         "en": "Example"
+        },
+        {
+         "fa": "اثر",
+         "en": "Effect"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "مهارکنندهٔ زنجیره",
+          "en": "ETC inhibitor"
+         },
+         {
+          "fa": "سیانید و CO (کمپلکس IV)، روتنون (I)، آنتی‌مایسین (III)",
+          "en": "cyanide & CO (Complex IV), rotenone (I), antimycin (III)"
+         },
+         {
+          "fa": "انتقال الکترون قطع → ATP ساخته نمی‌شود",
+          "en": "electron flow stops → no ATP"
+         }
+        ],
+        [
+         {
+          "fa": "جداکننده (uncoupler)",
+          "en": "Uncoupler"
+         },
+         {
+          "fa": "۲،۴-دی‌نیتروفنول، آسپرین (مصرف زیاد)، ترموژنین",
+          "en": "2,4-dinitrophenol, aspirin (overdose), thermogenin"
+         },
+         {
+          "fa": "پروتون‌ها نشت می‌کنند → گرما به‌جای ATP",
+          "en": "protons leak → heat instead of ATP"
+         }
+        ],
+        [
+         {
+          "fa": "مهار ATP سنتاز",
+          "en": "ATP synthase inhibitor"
+         },
+         {
+          "fa": "اولیگومایسین",
+          "en": "oligomycin"
+         },
+         {
+          "fa": "پروتون‌ها تجمع می‌کنند، ATP قطع می‌شود",
+          "en": "protons build up, ATP stops"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "مسمومیت با سیانید",
+        "en": "Cyanide poisoning"
+       },
+       "body": {
+        "fa": "سیانید به آهن Fe³⁺ در سیتوکروم a3 (کمپلکس IV) می‌چسبد و انتقال الکترون را متوقف می‌کند. نتیجه: اسیدوز لاکتیک، خون وریدیِ روشن (اکسیژن مصرف نمی‌شود) و بوی بادام. درمان با نیتریت‌ها (آمیل‌نیتریت) که مت‌هموگلوبین می‌سازند تا سیانید را بگیرد.",
+        "en": "Cyanide binds Fe³⁺ in cytochrome a3 (Complex IV) and halts electron transport. Result: lactic acidosis, bright-red venous blood (oxygen isn't consumed), and an almond smell. Treated with nitrites (amyl nitrite) that form methemoglobin to trap the cyanide."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "جداکننده‌ها گرما می‌سازند",
+        "en": "Uncouplers make heat"
+       },
+       "body": {
+        "fa": "وقتی پروتون‌ها به‌جای عبور از ATP سنتاز نشت می‌کنند، انرژی به‌صورت گرما آزاد می‌شود. چربی قهوه‌ای نوزادان با پروتئین ترموژنین (UCP-1) همین کار را می‌کند؛ و تب در مسمومیت با آسپرین از همین جداشدن ناشی می‌شود.",
+        "en": "When protons leak instead of passing through ATP synthase, the energy is released as heat. A newborn's brown fat does exactly this via thermogenin (UCP-1); and the fever of aspirin overdose comes from this uncoupling."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "NADH به کمپلکس I و FADH2 به کمپلکس II الکترون می‌دهند.",
+        "en": "NADH feeds Complex I and FADH2 feeds Complex II."
+       },
+       {
+        "fa": "CoQ و سیتوکروم c الکترون‌ها را تا کمپلکس IV می‌برند؛ اکسیژن پذیرندهٔ نهایی است.",
+        "en": "CoQ and cytochrome c carry electrons to Complex IV; oxygen is the final acceptor."
+       },
+       {
+        "fa": "کمپلکس‌های I، III و IV پروتون پمپ می‌کنند و شیب می‌سازند.",
+        "en": "Complexes I, III, and IV pump protons, building the gradient."
+       },
+       {
+        "fa": "ATP سنتاز با بازگشت پروتون‌ها ATP می‌سازد (کموئوسموز).",
+        "en": "ATP synthase makes ATP as protons flow back (chemiosmosis)."
+       },
+       {
+        "fa": "مهارکننده‌ها (سیانید، CO) انتقال را قطع؛ جداکننده‌ها (DNP، ترموژنین) گرما می‌سازند.",
+        "en": "Inhibitors (cyanide, CO) stop transport; uncouplers (DNP, thermogenin) make heat."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "«cholesterol phosphate dehydrogenase» در ترنسکریپت به «گلیسرول-فسفات دهیدروژناز (glycerol phosphate dehydrogenase)» تصحیح شد.",
+       "en": "Corrected the transcript's 'cholesterol phosphate dehydrogenase' to 'glycerol phosphate dehydrogenase'."
       }
      }
     ]
