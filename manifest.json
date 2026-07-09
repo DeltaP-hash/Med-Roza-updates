@@ -1,5 +1,5 @@
 {
- "contentVersion": 2,
+ "contentVersion": 3,
  "lessons": [
   {
    "courseID": "ethanol",
@@ -4210,6 +4210,508 @@
       "note": {
        "fa": "«cholesterol phosphate dehydrogenase» در ترنسکریپت به «گلیسرول-فسفات دهیدروژناز (glycerol phosphate dehydrogenase)» تصحیح شد.",
        "en": "Corrected the transcript's 'cholesterol phosphate dehydrogenase' to 'glycerol phosphate dehydrogenase'."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "dna",
+   "title": {
+    "fa": "ساختار DNA",
+    "en": "DNA Structure"
+   },
+   "subtitle": {
+    "fa": "از نوکلئوتید تا کروموزوم؛ متیلاسیون، استیلاسیون و اپی‌ژنتیک",
+    "en": "From nucleotide to chromosome; methylation, acetylation, and epigenetics"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "ساختار DNA",
+     "en": "DNA Structure"
+    },
+    "subtitle": {
+     "fa": "از نوکلئوتید تا کروموزوم، و سوییچ‌های اپی‌ژنتیک",
+     "en": "From nucleotide to chromosome, and the epigenetic switches"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "DNA",
+         "en": "DNA"
+        },
+        "definition": {
+         "fa": "حامل کد ژنتیکی؛ در هستهٔ یوکاریوت‌ها و سیتوپلاسم پروکاریوت‌ها.",
+         "en": "The carrier of the genetic code; in the nucleus of eukaryotes and the cytoplasm of prokaryotes."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " دو رشتهٔ مکمل دارد که از واحدهای تکراری به نام ",
+         "en": " has two complementary strands built from repeating units called "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "نوکلئوتید",
+         "en": "nucleotide"
+        },
+        "definition": {
+         "fa": "واحد سازندهٔ DNA: گروه فسفات + قند پنج‌کربنه + یک باز نیتروژنی.",
+         "en": "The building block of DNA: a phosphate group + a five-carbon sugar + a nitrogenous base."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " ساخته شده‌اند. بازها به‌صورت مکمل جفت می‌شوند: A با T و G با C.",
+         "en": " built from repeating units. The bases pair complementarily: A with T and G with C."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "بسته‌بندی DNA تا کروموزوم",
+        "en": "Packaging DNA into a chromosome"
+       },
+       "subtitle": {
+        "fa": "چگونه DNA بلند در هسته جا می‌شود",
+        "en": "How the long DNA fits inside the nucleus"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "DNA دو رشته‌ای",
+          "en": "double-stranded DNA"
+         },
+         "explanation": {
+          "fa": "بار منفی فسفات‌ها به هیستون‌های مثبت می‌چسبد.",
+          "en": "The negatively charged phosphates bind the positively charged histones."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "نوکلئوزوم",
+          "en": "nucleosome"
+         },
+         "explanation": {
+          "fa": "DNA دو بار دور هستهٔ هشت‌تایی هیستون می‌پیچد.",
+          "en": "DNA wraps twice around a core of eight histones."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "رشتهٔ مهره‌ای",
+          "en": "beads on a string"
+         },
+         "explanation": {
+          "fa": "هیستون H1 نوکلئوزوم‌ها را به‌هم می‌بندد.",
+          "en": "Histone H1 ties the nucleosomes together."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "sub",
+         "row": 3,
+         "label": {
+          "fa": "کروماتین فشرده",
+          "en": "condensed chromatin"
+         },
+         "explanation": {
+          "fa": "DNA + پروتئین به‌شکل فشرده.",
+          "en": "DNA + protein, tightly packed."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "prod",
+         "row": 4,
+         "label": {
+          "fa": "کروموزوم",
+          "en": "chromosome"
+         },
+         "explanation": {
+          "fa": "واحد نهاییِ کروماتینِ متراکم.",
+          "en": "The final unit of condensed chromatin."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "پیچیدن دور ۸ هیستون (۲تا از هرکدام H2A، H2B، H3، H4)",
+          "en": "wrap around 8 histones (2 each of H2A, H2B, H3, H4)"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "اتصال با هیستون H1",
+          "en": "linked by histone H1"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n4",
+         "label": {
+          "fa": "فشرده‌شدن",
+          "en": "condensing"
+         }
+        },
+        {
+         "from": "n4",
+         "to": "n5",
+         "label": {
+          "fa": "تراکم بیشتر",
+          "en": "further compaction"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "اگر از یک نوکلئوتید گروه فسفات را برداریم، آن را ",
+         "en": "If you remove the phosphate group from a nucleotide, it becomes a "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "نوکلئوزید",
+         "en": "nucleoside"
+        },
+        "definition": {
+         "fa": "باز + قند، بدون گروه فسفات.",
+         "en": "A base + sugar, with no phosphate group."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " می‌نامیم. پنج باز نیتروژنی وجود دارد: ",
+         "en": ". There are five nitrogenous bases: the "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "پیریمیدین‌ها",
+         "en": "pyrimidines"
+        },
+        "definition": {
+         "fa": "بازهای تک‌حلقه‌ای: سیتوزین، تیمین، یوراسیل.",
+         "en": "Single-ring bases: cytosine, thymine, uracil."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " (تک‌حلقه) و ",
+         "en": " (one ring) and the "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "پورین‌ها",
+         "en": "purines"
+        },
+        "definition": {
+         "fa": "بازهای دوحلقه‌ای: آدنین، گوانین.",
+         "en": "Two-ring bases: adenine, guanine."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " (دوحلقه). یوراسیل فقط در RNA و تیمین فقط در DNA دیده می‌شود.",
+         "en": " (two rings). Uracil appears only in RNA and thymine only in DNA."
+        }
+       }
+      ]
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "ویژگی",
+         "en": "Feature"
+        },
+        {
+         "fa": "پورین",
+         "en": "Purine"
+        },
+        {
+         "fa": "پیریمیدین",
+         "en": "Pyrimidine"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "تعداد حلقه",
+          "en": "Rings"
+         },
+         {
+          "fa": "دو",
+          "en": "Two"
+         },
+         {
+          "fa": "یک",
+          "en": "One"
+         }
+        ],
+        [
+         {
+          "fa": "بازها",
+          "en": "Bases"
+         },
+         {
+          "fa": "آدنین، گوانین",
+          "en": "adenine, guanine"
+         },
+         {
+          "fa": "سیتوزین، تیمین، یوراسیل",
+          "en": "cytosine, thymine, uracil"
+         }
+        ],
+        [
+         {
+          "fa": "پسوند نوکلئوتید",
+          "en": "Nucleotide suffix"
+         },
+         {
+          "fa": "«-وزین» (آدنوزین، گوانوزین)",
+          "en": "“-osine” (adenosine, guanosine)"
+         },
+         {
+          "fa": "«-یدین» (سیتیدین، تیمیدین، یوریدین)",
+          "en": "“-idine” (cytidine, thymidine, uridine)"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "برای جا شدن در هسته، DNA دور پروتئین‌هایی به نام ",
+         "en": "To fit inside the nucleus, DNA wraps around proteins called "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "هیستون",
+         "en": "histones"
+        },
+        "definition": {
+         "fa": "پروتئین‌های سرشار از لیزین و آرژنین (بار مثبت) که به DNA می‌چسبند.",
+         "en": "Proteins rich in lysine and arginine (positively charged) that bind DNA."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " می‌پیچد. این هیستون‌ها پر از دو آمینواسید ",
+         "en": " wrap around. These histones are packed with the two amino acids "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "لیزین و آرژنین",
+         "en": "lysine and arginine"
+        },
+        "definition": {
+         "fa": "آمینواسیدهای بازی با بار مثبت که به فسفاتِ منفیِ DNA می‌چسبند.",
+         "en": "Basic, positively charged amino acids that bind the negatively charged DNA phosphates."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " هستند. واحد پایه، نوکلئوزوم است: DNA دو بار دور هستهٔ هشت‌تایی هیستون (دوتا از هرکدام H2A، H2B، H3، H4) می‌پیچد و هیستون H1 نوکلئوزوم‌ها را مثل مهره‌های یک نخ به هم می‌بندد.",
+         "en": ". The basic unit is the nucleosome: DNA wraps twice around a core of eight histones (two each of H2A, H2B, H3, H4), and histone H1 ties the nucleosomes together like beads on a string."
+        }
+       }
+      ]
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "متیلاسیون DNA و اپی‌ژنتیک",
+        "en": "DNA methylation and epigenetics"
+       },
+       "body": {
+        "fa": "یک گروه متیل به بازِ سیتوزین (تشکیل ۵-متیل‌سیتوزین) در جزایر CG اضافه می‌شود و رونویسی را خاموش می‌کند — نمونه‌ای از اپی‌ژنتیک (روشن/خاموش‌کردن ژن‌ها). حدود ۷۰٪ DNA انسان متیله است. باکتری‌ها هم سیتوزین و هم آدنین را متیله می‌کنند تا از حملهٔ ویروس‌ها (باکتریوفاژها) محافظت شوند.",
+        "en": "A methyl group is added to the base cytosine (forming 5-methylcytosine) at CG islands and silences transcription — an example of epigenetics (switching genes on/off). About 70% of human DNA is methylated. Bacteria methylate both cytosine and adenine to protect against viruses (bacteriophages)."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "لوپوس ناشی از دارو",
+        "en": "Drug-induced lupus"
+       },
+       "body": {
+        "fa": "با آنتی‌بادی ضدهیستون (anti-histone) در حدود ۹۵٪ موارد مشخص می‌شود؛ در حالی‌که لوپوس کلاسیک با آنتی‌بادی ضد DNA دورشته‌ای (anti-dsDNA) همراه است. سه داروی کلاسیک: هیدرالازین، پروکائین‌آمید و ایزونیازید.",
+        "en": "Marked by anti-histone antibodies in about 95% of cases, whereas classic lupus is associated with anti-double-stranded-DNA (anti-dsDNA) antibodies. The three classic drugs: hydralazine, procainamide, and isoniazid."
+       }
+      }
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "ویژگی",
+         "en": "Feature"
+        },
+        {
+         "fa": "هتروکروماتین",
+         "en": "Heterochromatin"
+        },
+        {
+         "fa": "یوکروماتین",
+         "en": "Euchromatin"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "تراکم",
+          "en": "Packing"
+         },
+         {
+          "fa": "فشرده",
+          "en": "Condensed"
+         },
+         {
+          "fa": "باز",
+          "en": "Loose"
+         }
+        ],
+        [
+         {
+          "fa": "رونویسی",
+          "en": "Transcription"
+         },
+         {
+          "fa": "خاموش",
+          "en": "Silent"
+         },
+         {
+          "fa": "فعال",
+          "en": "Active"
+         }
+        ],
+        [
+         {
+          "fa": "تغییر غالب",
+          "en": "Dominant mark"
+         },
+         {
+          "fa": "متیلاسیون DNA",
+          "en": "DNA methylation"
+         },
+         {
+          "fa": "استیلاسیون هیستون",
+          "en": "histone acetylation"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "mnem",
+       "title": {
+        "fa": "کلید اپی‌ژنتیک",
+        "en": "The epigenetic key"
+       },
+       "body": {
+        "fa": "استیلاسیون فعال می‌کند، متیلاسیون خاموش می‌کند. افزودن استیل به لیزینِ هیستون → کروماتین باز → رونویسی روشن؛ افزودن متیل به سیتوزینِ DNA → رونویسی خاموش. حذف استیل (deacetylation) دوباره خاموش می‌کند.",
+        "en": "Acetylation activates, methylation mutes. Adding acetyl to a histone's lysine → open chromatin → transcription on; adding methyl to DNA's cytosine → transcription off. Removing acetyl (deacetylation) turns it off again."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "نوکلئوتید = فسفات + قند + باز؛ بدون فسفات می‌شود نوکلئوزید.",
+        "en": "Nucleotide = phosphate + sugar + base; without the phosphate it's a nucleoside."
+       },
+       {
+        "fa": "پورین‌ها دوحلقه (A، G) و پیریمیدین‌ها تک‌حلقه (C، T، U) اند.",
+        "en": "Purines have two rings (A, G); pyrimidines have one (C, T, U)."
+       },
+       {
+        "fa": "DNA دور هیستون‌ها می‌پیچد → نوکلئوزوم → کروماتین → کروموزوم.",
+        "en": "DNA wraps around histones → nucleosome → chromatin → chromosome."
+       },
+       {
+        "fa": "استیلاسیون هیستون رونویسی را روشن و متیلاسیون سیتوزین آن را خاموش می‌کند.",
+        "en": "Histone acetylation turns transcription on; cytosine methylation turns it off."
+       },
+       {
+        "fa": "لوپوس دارویی با آنتی‌بادی ضدهیستون مشخص می‌شود (هیدرالازین، پروکائین‌آمید، ایزونیازید).",
+        "en": "Drug-induced lupus is marked by anti-histone antibodies (hydralazine, procainamide, isoniazid)."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "«antihistamine antibodies» گفتاری به «آنتی‌بادی ضدهیستون (anti-histone)» تصحیح شد.",
+       "en": "Corrected the spoken 'antihistamine antibodies' to 'anti-histone antibodies'."
+      }
+     },
+     {
+      "index": 2,
+      "note": {
+       "fa": "«five methyl cytosine» به «۵-متیل‌سیتوزین (5-methylcytosine)» تصحیح شد.",
+       "en": "Corrected 'five methyl cytosine' to '5-methylcytosine'."
       }
      }
     ]
