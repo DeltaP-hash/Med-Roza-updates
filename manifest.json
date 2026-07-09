@@ -1,5 +1,5 @@
 {
- "contentVersion": 3,
+ "contentVersion": 4,
  "lessons": [
   {
    "courseID": "ethanol",
@@ -4712,6 +4712,2101 @@
       "note": {
        "fa": "«five methyl cytosine» به «۵-متیل‌سیتوزین (5-methylcytosine)» تصحیح شد.",
        "en": "Corrected 'five methyl cytosine' to '5-methylcytosine'."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "gluconeogenesis",
+   "title": {
+    "fa": "گلوکونئوژنز",
+    "en": "Gluconeogenesis"
+   },
+   "subtitle": {
+    "fa": "دور زدن سه گام برگشت‌ناپذیر گلیکولیز",
+    "en": "Bypassing glycolysis's three irreversible steps"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "گلوکونئوژنز",
+     "en": "Gluconeogenesis"
+    },
+    "subtitle": {
+     "fa": "ساخت گلوکز از منابع غیرکربوهیدراتی — با دور زدن سه گام برگشت‌ناپذیر",
+     "en": "Making glucose from non-carbohydrate sources — by bypassing three irreversible steps"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "گلوکونئوژنز",
+         "en": "gluconeogenesis"
+        },
+        "definition": {
+         "fa": "ساخت گلوکز از پیروات و دیگر منابع غیرکربوهیدراتی؛ عمدتاً در کبد و کلیه.",
+         "en": "Building glucose from pyruvate and other non-carbohydrate sources; mainly in liver and kidney."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " عکسِ گلیکولیز است و برای سلول ",
+         "en": " is glycolysis in reverse, and it "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "ATP خرج می‌کند",
+         "en": "costs ATP"
+        },
+        "definition": {
+         "fa": "برخلاف گلیکولیز که ATP می‌سازد، این مسیر انرژی مصرف می‌کند.",
+         "en": "Unlike glycolysis, which makes ATP, this pathway consumes energy."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": ". چون سه گام گلیکولیز برگشت‌ناپذیرند، گلوکونئوژنز باید آن‌ها را با آنزیم‌های اختصاصی خود دور بزند.",
+         "en": ". Because three glycolysis steps are irreversible, gluconeogenesis must bypass them with its own enzymes."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "مسیر گلوکونئوژنز",
+        "en": "The gluconeogenic pathway"
+       },
+       "subtitle": {
+        "fa": "سه گام دورزننده، سه آنزیم اختصاصی",
+        "en": "Three bypasses, three dedicated enzymes"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "پیروات",
+          "en": "pyruvate"
+         },
+         "explanation": {
+          "fa": "وارد میتوکندری می‌شود تا اولین گام دورزننده انجام شود.",
+          "en": "Enters the mitochondrion for the first bypass step."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "اگزالواستات (OAA)",
+          "en": "oxaloacetate (OAA)"
+         },
+         "explanation": {
+          "fa": "با شاتل مالات از میتوکندری خارج می‌شود.",
+          "en": "Leaves the mitochondrion via the malate shuttle."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "فسفوانول‌پیروات (PEP)",
+          "en": "phosphoenolpyruvate (PEP)"
+         },
+         "explanation": {
+          "fa": "گام برگشت‌ناپذیر پیروات‌کیناز دور زده شد.",
+          "en": "The irreversible pyruvate-kinase step has been bypassed."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "sub",
+         "row": 3,
+         "label": {
+          "fa": "فروکتوز-۱،۶-بیس‌فسفات",
+          "en": "fructose-1,6-bisphosphate"
+         },
+         "explanation": {
+          "fa": "از گام‌های برگشت‌پذیر گلیکولیز به اینجا می‌رسیم.",
+          "en": "Reached by running glycolysis's reversible steps backward."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "sub",
+         "row": 4,
+         "label": {
+          "fa": "فروکتوز-۶-فسفات",
+          "en": "fructose-6-phosphate"
+         },
+         "explanation": {
+          "fa": "این گام، محدودکنندهٔ سرعت گلوکونئوژنز است.",
+          "en": "This step is the rate-limiting step of gluconeogenesis."
+         }
+        },
+        {
+         "id": "n6",
+         "kind": "sub",
+         "row": 5,
+         "label": {
+          "fa": "گلوکز-۶-فسفات",
+          "en": "glucose-6-phosphate"
+         },
+         "explanation": {
+          "fa": "در بافت‌های بدون گلوکز-۶-فسفاتاز، اینجا متوقف و به گلیکوژن می‌رود.",
+          "en": "In tissues lacking glucose-6-phosphatase it stops here and goes to glycogen."
+         }
+        },
+        {
+         "id": "n7",
+         "kind": "prod",
+         "row": 6,
+         "label": {
+          "fa": "گلوکز",
+          "en": "glucose"
+         },
+         "explanation": {
+          "fa": "فقط کبد و کلیه می‌توانند گلوکز آزاد به خون بدهند.",
+          "en": "Only liver and kidney can release free glucose into the blood."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "پیروات‌کربوکسیلاز (بیوتین، ATP) — میتوکندری",
+          "en": "pyruvate carboxylase (biotin, ATP) — mitochondria"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "PEPCK (GTP)",
+          "en": "PEPCK (GTP)"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n4",
+         "label": {
+          "fa": "گام‌های برگشت‌پذیر گلیکولیز",
+          "en": "reversible glycolysis steps"
+         }
+        },
+        {
+         "from": "n4",
+         "to": "n5",
+         "label": {
+          "fa": "فروکتوز-۱،۶-بیس‌فسفاتاز — محدودکنندهٔ سرعت",
+          "en": "fructose-1,6-bisphosphatase — rate-limiting"
+         }
+        },
+        {
+         "from": "n5",
+         "to": "n6",
+         "label": {
+          "fa": "برگشت‌پذیر",
+          "en": "reversible"
+         }
+        },
+        {
+         "from": "n6",
+         "to": "n7",
+         "label": {
+          "fa": "گلوکز-۶-فسفاتاز (شبکهٔ آندوپلاسمی؛ کبد و کلیه)",
+          "en": "glucose-6-phosphatase (endoplasmic reticulum; liver & kidney)"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "یک سیستم هوشمند مانع می‌شود که سلول هم‌زمان ATP بسازد و خرج کند: ",
+         "en": "A clever system stops the cell from making and spending ATP at once: "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "استیل‌CoA",
+         "en": "acetyl-CoA"
+        },
+        "definition": {
+         "fa": "فعال‌کنندهٔ آلوستریک پیروات‌کربوکسیلاز؛ بدون آن این آنزیم اصلاً کار نمی‌کند.",
+         "en": "The allosteric activator of pyruvate carboxylase; without it the enzyme has no activity."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " وقتی ATP زیاد است تلنبار می‌شود و ",
+         "en": " accumulates when ATP is high and activates "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "پیروات‌کربوکسیلاز",
+         "en": "pyruvate carboxylase"
+        },
+        "definition": {
+         "fa": "پیروات را به اگزالواستات تبدیل می‌کند؛ به بیوتین نیاز دارد.",
+         "en": "Converts pyruvate to oxaloacetate; requires biotin."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " را فعال می‌کند — پس وقتی انرژی فراوان است، پیروات به‌جای TCA به سمت ساخت گلوکز می‌رود.",
+         "en": " — so when energy is plentiful, pyruvate heads toward glucose instead of the TCA cycle."
+        }
+       }
+      ]
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "ویژگی",
+         "en": "Feature"
+        },
+        {
+         "fa": "گلیکولیز",
+         "en": "Glycolysis"
+        },
+        {
+         "fa": "گلوکونئوژنز",
+         "en": "Gluconeogenesis"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "آنزیم محدودکننده",
+          "en": "Rate-limiting enzyme"
+         },
+         {
+          "fa": "PFK-1",
+          "en": "PFK-1"
+         },
+         {
+          "fa": "فروکتوز-۱،۶-بیس‌فسفاتاز",
+          "en": "fructose-1,6-bisphosphatase"
+         }
+        ],
+        [
+         {
+          "fa": "فعال با",
+          "en": "Activated by"
+         },
+         {
+          "fa": "AMP، فروکتوز-۲،۶-بیس‌فسفات",
+          "en": "AMP, fructose-2,6-bisphosphate"
+         },
+         {
+          "fa": "ATP، استیل‌CoA",
+          "en": "ATP, acetyl-CoA"
+         }
+        ],
+        [
+         {
+          "fa": "مهار با",
+          "en": "Inhibited by"
+         },
+         {
+          "fa": "ATP، سیترات",
+          "en": "ATP, citrate"
+         },
+         {
+          "fa": "AMP، فروکتوز-۲،۶-بیس‌فسفات",
+          "en": "AMP, fructose-2,6-bisphosphate"
+         }
+        ],
+        [
+         {
+          "fa": "هورمون محرک",
+          "en": "Driven by"
+         },
+         {
+          "fa": "انسولین",
+          "en": "insulin"
+         },
+         {
+          "fa": "گلوکاگون، کورتیزول",
+          "en": "glucagon, cortisol"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "بیوتین و آنزیم‌های کربوکسیلاز",
+        "en": "Biotin and the carboxylases"
+       },
+       "body": {
+        "fa": "هر آنزیم کربوکسیلازی که از CO2 و ATP استفاده می‌کند به بیوتین نیاز دارد: پیروات‌کربوکسیلاز، استیل‌CoA کربوکسیلاز و پروپیونیل‌CoA کربوکسیلاز. کمبود بیوتین نادر است؛ مصرف زیاد سفیدهٔ تخم‌مرغ خام (حاوی آویدین) می‌تواند آن را ایجاد کند و با درماتیت، گلوسیت و تهوع بروز می‌کند.",
+        "en": "Any carboxylase that uses CO2 and ATP needs biotin: pyruvate carboxylase, acetyl-CoA carboxylase, and propionyl-CoA carboxylase. Biotin deficiency is rare; massive raw egg-white intake (which contains avidin) can cause it, presenting with dermatitis, glossitis, and nausea."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "کمبود پیروات‌کربوکسیلاز",
+        "en": "Pyruvate carboxylase deficiency"
+       },
+       "body": {
+        "fa": "نوزاد با شکست رشد، اسیدوز لاکتیک و آلانین بالا. چون هم TCA (به‌دلیل ATP بالا) و هم گلوکونئوژنز بسته‌اند، پیروات فقط می‌تواند به لاکتات و آلانین برود.",
+        "en": "An infant with failure to thrive, lactic acidosis, and high alanine. With both the TCA cycle (from high ATP) and gluconeogenesis blocked, pyruvate can only go to lactate and alanine."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "warn",
+       "title": {
+        "fa": "کدام سوبستراها گلوکز می‌سازند؟",
+        "en": "Which substrates can make glucose?"
+       },
+       "body": {
+        "fa": "لاکتات، آلانین، گلیسرول، آمینواسیدهای گلوکوژنیک و اسیدهای چرب فرد (از راه پروپیونیل‌CoA) می‌توانند. اسیدهای چرب زوج نمی‌توانند — آن‌ها فقط استیل‌CoA می‌دهند و استیل‌CoA اگزالواستات خالص اضافه نمی‌کند.",
+        "en": "Lactate, alanine, glycerol, glucogenic amino acids, and odd-chain fatty acids (via propionyl-CoA) can. Even-chain fatty acids cannot — they yield only acetyl-CoA, which adds no net oxaloacetate."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "پیروات → OAA با پیروات‌کربوکسیلاز (بیوتین؛ فعال‌شونده با استیل‌CoA).",
+        "en": "Pyruvate → OAA by pyruvate carboxylase (biotin; activated by acetyl-CoA)."
+       },
+       {
+        "fa": "OAA → PEP با PEPCK (GTP).",
+        "en": "OAA → PEP by PEPCK (GTP)."
+       },
+       {
+        "fa": "فروکتوز-۱،۶-بیس‌فسفاتاز گام محدودکنندهٔ سرعت است.",
+        "en": "Fructose-1,6-bisphosphatase is the rate-limiting step."
+       },
+       {
+        "fa": "گلوکز-۶-فسفاتاز فقط در کبد و کلیه گلوکز آزاد می‌کند.",
+        "en": "Glucose-6-phosphatase, only in liver and kidney, releases free glucose."
+       },
+       {
+        "fa": "اسیدهای چرب زوج گلوکز نمی‌سازند؛ فرد می‌سازند.",
+        "en": "Even-chain fatty acids cannot make glucose; odd-chain can."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "«tricyclic acid cycle» به «چرخهٔ تری‌کربوکسیلیک‌اسید (TCA)» تصحیح شد.",
+       "en": "Corrected 'tricyclic acid cycle' to 'tricarboxylic acid (TCA) cycle'."
+      }
+     },
+     {
+      "index": 2,
+      "note": {
+       "fa": "«phosphenolpyruvate» به «فسفوانول‌پیروات (phosphoenolpyruvate)» تصحیح شد.",
+       "en": "Corrected 'phosphenolpyruvate' to 'phosphoenolpyruvate'."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "glycogen",
+   "title": {
+    "fa": "گلیکوژن",
+    "en": "Glycogen"
+   },
+   "subtitle": {
+    "fa": "ذخیرهٔ گلوکز، شاخه‌ها، و چهار بیماری ذخیرهٔ گلیکوژن",
+    "en": "Glucose storage, branches, and the four glycogen storage diseases"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "گلیکوژن",
+     "en": "Glycogen"
+    },
+    "subtitle": {
+     "fa": "شکل ذخیرهٔ گلوکز: ساخت، تجزیه، و چهار بیماری ذخیره‌ای",
+     "en": "The storage form of glucose: synthesis, breakdown, and four storage diseases"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "گلیکوژن",
+         "en": "glycogen"
+        },
+        "definition": {
+         "fa": "پلیمر شاخه‌دار گلوکز؛ شکل ذخیرهٔ گلوکز در کبد و عضله.",
+         "en": "A branched polymer of glucose; the storage form of glucose in liver and muscle."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " در عضله و کبد ذخیره می‌شود، اما این دو فرق مهمی دارند: عضله گلیکوژن را فقط برای خودش می‌شکند، در حالی‌که ",
+         "en": " is stored in muscle and liver, with one crucial difference: muscle breaks glycogen down only for itself, whereas the "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "کبد",
+         "en": "liver"
+        },
+        "definition": {
+         "fa": "با داشتن گلوکز-۶-فسفاتاز می‌تواند گلوکز آزاد را به خون بفرستد.",
+         "en": "Having glucose-6-phosphatase, it can release free glucose into the blood."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " می‌تواند گلوکز آزاد را به خون بریزد و قند خون را در ناشتایی حفظ کند.",
+         "en": " can release free glucose into the blood and maintain fasting blood sugar."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "ساخت گلیکوژن",
+        "en": "Glycogen synthesis"
+       },
+       "subtitle": {
+        "fa": "انشعابی از گلوکز-۶-فسفات",
+        "en": "A branch off glucose-6-phosphate"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "گلوکز-۶-فسفات",
+          "en": "glucose-6-phosphate"
+         },
+         "explanation": {
+          "fa": "تقاطع گلیکولیز، گلیکوژن و شنت HMP.",
+          "en": "The crossroads of glycolysis, glycogen, and the HMP shunt."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "گلوکز-۱-فسفات",
+          "en": "glucose-1-phosphate"
+         },
+         "explanation": {
+          "fa": "جابه‌جایی گروه فسفات (برگشت‌پذیر).",
+          "en": "The phosphate group is moved (reversible)."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "UDP-گلوکز",
+          "en": "UDP-glucose"
+         },
+         "explanation": {
+          "fa": "گلوکز فعال‌شده، آمادهٔ افزوده‌شدن به زنجیره.",
+          "en": "Activated glucose, ready to be added to the chain."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "sub",
+         "row": 3,
+         "label": {
+          "fa": "گلیکوژن بدون شاخه (پیوند ۱،۴)",
+          "en": "unbranched glycogen (1,4 links)"
+         },
+         "explanation": {
+          "fa": "زنجیرهٔ خطی گلوکزها.",
+          "en": "A straight chain of glucose units."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "prod",
+         "row": 4,
+         "label": {
+          "fa": "گلیکوژن شاخه‌دار (پیوند ۱،۶)",
+          "en": "branched glycogen (1,6 links)"
+         },
+         "explanation": {
+          "fa": "شاخه‌ها گلیکوژن را محلول‌تر و متراکم‌تر می‌کنند.",
+          "en": "Branches make glycogen more soluble and more compact."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "فسفوگلوکوموتاز",
+          "en": "phosphoglucomutase"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "UDP-گلوکز پیروفسفوریلاز (UTP)",
+          "en": "UDP-glucose pyrophosphorylase (UTP)"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n4",
+         "label": {
+          "fa": "گلیکوژن سنتاز",
+          "en": "glycogen synthase"
+         }
+        },
+        {
+         "from": "n4",
+         "to": "n5",
+         "label": {
+          "fa": "آنزیم شاخه‌ساز",
+          "en": "branching enzyme"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "برای تجزیه، ",
+         "en": "For breakdown, "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "گلیکوژن فسفوریلاز",
+         "en": "glycogen phosphorylase"
+        },
+        "definition": {
+         "fa": "پیوندهای ۱،۴ را می‌شکند و گلوکز-۱-فسفات می‌دهد؛ با ویتامین B6 پایدار می‌شود.",
+         "en": "Cleaves 1,4 bonds to give glucose-1-phosphate; stabilized by vitamin B6."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " پیوندهای ۱،۴ را می‌برد، اما نزدیک شاخه متوقف می‌شود و ساختارهایی به نام ",
+         "en": " cuts the 1,4 bonds but stalls near a branch, leaving structures called "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "دکسترین حدی",
+         "en": "limit dextrins"
+        },
+        "definition": {
+         "fa": "زنجیره‌های کوتاه ۳–۴ گلوکزی نزدیک یک شاخهٔ ۱،۶.",
+         "en": "Short 3–4 glucose chains sitting next to a 1,6 branch."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " باقی می‌گذارد. آنگاه ",
+         "en": ". Then the "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "آنزیم شاخه‌بردار",
+         "en": "debranching enzyme"
+        },
+        "definition": {
+         "fa": "پیوند ۱،۶ را باز می‌کند تا فسفوریلاز بتواند ادامه دهد.",
+         "en": "Cleaves the 1,6 bond so phosphorylase can carry on."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " شاخه را باز می‌کند. لیزوزوم‌ها هم آنزیم جداگانه‌ای به نام آلفا-۱،۴-گلوکوزیداز (مالتاز اسیدی) دارند.",
+         "en": ". Lysosomes also have a separate enzyme, alpha-1,4-glucosidase (acid maltase)."
+        }
+       }
+      ]
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "بیماری",
+         "en": "Disease"
+        },
+        {
+         "fa": "آنزیم ناقص",
+         "en": "Deficient enzyme"
+        },
+        {
+         "fa": "هیپوگلیسمی",
+         "en": "Hypoglycemia"
+        },
+        {
+         "fa": "نشانهٔ کلیدی",
+         "en": "Key clue"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "فون‌گیرکه (نوع I)",
+          "en": "Von Gierke (type I)"
+         },
+         {
+          "fa": "گلوکز-۶-فسفاتاز",
+          "en": "glucose-6-phosphatase"
+         },
+         {
+          "fa": "شدید",
+          "en": "Severe"
+         },
+         {
+          "fa": "اسیدوز لاکتیک + کبد بزرگ",
+          "en": "lactic acidosis + hepatomegaly"
+         }
+        ],
+        [
+         {
+          "fa": "پومپه (نوع II)",
+          "en": "Pompe (type II)"
+         },
+         {
+          "fa": "آلفا-۱،۴-گلوکوزیداز لیزوزومی",
+          "en": "lysosomal alpha-1,4-glucosidase"
+         },
+         {
+          "fa": "ندارد",
+          "en": "None"
+         },
+         {
+          "fa": "کاردیومگالی، هیپوتونی، زبان بزرگ",
+          "en": "cardiomegaly, hypotonia, big tongue"
+         }
+        ],
+        [
+         {
+          "fa": "کوری (نوع III)",
+          "en": "Cori (type III)"
+         },
+         {
+          "fa": "آنزیم شاخه‌بردار",
+          "en": "debranching enzyme"
+         },
+         {
+          "fa": "خفیف",
+          "en": "Mild"
+         },
+         {
+          "fa": "بدون اسیدوز لاکتیک؛ درگیری عضله",
+          "en": "no lactic acidosis; muscle involved"
+         }
+        ],
+        [
+         {
+          "fa": "مک‌آردل (نوع V)",
+          "en": "McArdle (type V)"
+         },
+         {
+          "fa": "گلیکوژن فسفوریلاز عضله",
+          "en": "muscle glycogen phosphorylase"
+         },
+         {
+          "fa": "ندارد",
+          "en": "None"
+         },
+         {
+          "fa": "عدم تحمل ورزش، کرامپ، ادرار تیره",
+          "en": "exercise intolerance, cramps, dark urine"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "تنظیم هورمونی با فسفریلاسیون",
+        "en": "Hormonal control by phosphorylation"
+       },
+       "body": {
+        "fa": "گلوکاگون و اپی‌نفرین هر دو آنزیم را فسفریله می‌کنند، اما اثرشان معکوس است: فسفوریلاز فعال می‌شود (تجزیه) و سنتاز خاموش. انسولین برعکس، هر دو را دِفسفریله می‌کند: سنتاز فعال (ساخت) و فسفوریلاز خاموش. در عضلهٔ در حال انقباض، کلسیم-کالمودولین بدون نیاز به هورمون فسفوریلاز را فعال می‌کند.",
+        "en": "Glucagon and epinephrine phosphorylate both enzymes, but with opposite effects: phosphorylase turns ON (breakdown) and synthase turns OFF. Insulin does the reverse by dephosphorylating both: synthase ON (synthesis), phosphorylase OFF. In contracting muscle, calcium-calmodulin activates phosphorylase without waiting for hormones."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "چرا فون‌گیرکه اسیدوز لاکتیک می‌دهد",
+        "en": "Why Von Gierke causes lactic acidosis"
+       },
+       "body": {
+        "fa": "چرخهٔ کوری (لاکتات → کبد → گلوکز) به گلوکز-۶-فسفاتاز نیاز دارد. در فون‌گیرکه این آنزیم نیست، پس چرخه می‌شکند و لاکتات در خون بالا می‌رود. درمان: نشاستهٔ ذرت بین وعده‌ها و پرهیز از ساکارز، لاکتوز، فروکتوز و گالاکتوز.",
+        "en": "The Cori cycle (lactate → liver → glucose) needs glucose-6-phosphatase. In Von Gierke that enzyme is missing, so the cycle breaks and blood lactate rises. Treatment: cornstarch between meals, and avoiding sucrose, lactose, fructose, and galactose."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "mnem",
+       "title": {
+        "fa": "چهار بیماری، چهار آنزیم",
+        "en": "Four diseases, four enzymes"
+       },
+       "body": {
+        "fa": "هر چهار بیماریِ پرتکرار دقیقاً به یکی از چهار آنزیمِ تجزیهٔ گلیکوژن مربوط‌اند: فون‌گیرکه = گلوکز-۶-فسفاتاز، پومپه = گلوکوزیداز لیزوزومی («پومپه پمپِ قلب را خراب می‌کند»)، کوری = شاخه‌بردار، مک‌آردل = فسفوریلازِ عضله («M برای Muscle»).",
+        "en": "All four high-yield diseases map onto one of the four glycogen-breakdown enzymes: Von Gierke = glucose-6-phosphatase, Pompe = lysosomal glucosidase (“Pompe trashes the Pump”), Cori = debrancher, McArdle = Muscle phosphorylase (“M for Muscle”)."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "G6P → G1P → UDP-گلوکز → گلیکوژن؛ آنزیم شاخه‌ساز پیوند ۱،۶ می‌سازد.",
+        "en": "G6P → G1P → UDP-glucose → glycogen; the branching enzyme makes the 1,6 bonds."
+       },
+       {
+        "fa": "فسفوریلاز پیوند ۱،۴ را می‌شکند؛ شاخه‌بردار دکسترین حدی را باز می‌کند.",
+        "en": "Phosphorylase cleaves 1,4 bonds; the debrancher clears the limit dextrins."
+       },
+       {
+        "fa": "فقط کبد گلوکز-۶-فسفاتاز دارد، پس فقط کبد گلوکز به خون می‌دهد.",
+        "en": "Only the liver has glucose-6-phosphatase, so only the liver releases glucose."
+       },
+       {
+        "fa": "گلوکاگون/اپی‌نفرین فسفریله می‌کنند؛ انسولین دِفسفریله می‌کند.",
+        "en": "Glucagon/epinephrine phosphorylate; insulin dephosphorylates."
+       },
+       {
+        "fa": "فون‌گیرکه، پومپه، کوری و مک‌آردل = نوع I، II، III و V.",
+        "en": "Von Gierke, Pompe, Cori, and McArdle = types I, II, III, and V."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "«corn starts» به «نشاستهٔ ذرت (cornstarch)» تصحیح شد.",
+       "en": "Corrected 'corn starts' to 'cornstarch'."
+      }
+     },
+     {
+      "index": 2,
+      "note": {
+       "fa": "«a patter sites» به «هپاتوسیت‌ها (hepatocytes)» تصحیح شد.",
+       "en": "Corrected 'a patter sites' to 'hepatocytes'."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "pdh",
+   "title": {
+    "fa": "پیروات‌دهیدروژناز",
+    "en": "Pyruvate Dehydrogenase"
+   },
+   "subtitle": {
+    "fa": "دروازهٔ ورود به TCA: سه آنزیم، پنج کوفاکتور",
+    "en": "The gateway into the TCA cycle: three enzymes, five cofactors"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "کمپلکس پیروات‌دهیدروژناز",
+     "en": "Pyruvate Dehydrogenase Complex"
+    },
+    "subtitle": {
+     "fa": "دروازهٔ ورود پیروات به چرخهٔ TCA",
+     "en": "The gateway that lets pyruvate into the TCA cycle"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "پیروات",
+         "en": "pyruvate"
+        },
+        "definition": {
+         "fa": "محصول نهایی گلیکولیز؛ سر یک چهارراه متابولیک.",
+         "en": "The end product of glycolysis; standing at a metabolic crossroads."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " چهار سرنوشت دارد. مهم‌ترینِ آن‌ها تبدیل به استیل‌CoA با ",
+         "en": " has four possible fates. The most important is conversion to acetyl-CoA by the "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "کمپلکس پیروات‌دهیدروژناز (PDH)",
+         "en": "pyruvate dehydrogenase (PDH) complex"
+        },
+        "definition": {
+         "fa": "سه آنزیم (E1، E2، E3) که با پنج کوفاکتور کار می‌کنند.",
+         "en": "Three enzymes (E1, E2, E3) working with five cofactors."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " است — گامی برگشت‌ناپذیر که کربن‌ها را وارد چرخهٔ TCA می‌کند.",
+         "en": " — an irreversible step that commits the carbons to the TCA cycle."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "چهار سرنوشت پیروات",
+        "en": "The four fates of pyruvate"
+       },
+       "subtitle": {
+        "fa": "روی هر گره بزنید تا آنزیم و مسیرش را ببینید",
+        "en": "Tap a node to see its enzyme and route"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "پیروات",
+          "en": "pyruvate"
+         },
+         "explanation": {
+          "fa": "از سیتوزول وارد میتوکندری می‌شود.",
+          "en": "Moves from the cytosol into the mitochondrion."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "prod",
+         "row": 1,
+         "label": {
+          "fa": "استیل‌CoA → چرخهٔ TCA",
+          "en": "acetyl-CoA → TCA cycle"
+         },
+         "explanation": {
+          "fa": "بیشترین بازده ATP؛ گامی برگشت‌ناپذیر.",
+          "en": "The highest ATP yield; an irreversible commitment."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "اگزالواستات → گلوکونئوژنز",
+          "en": "oxaloacetate → gluconeogenesis"
+         },
+         "explanation": {
+          "fa": "وقتی استیل‌CoA زیاد است، این راه فعال می‌شود.",
+          "en": "This route switches on when acetyl-CoA is abundant."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "prod",
+         "row": 2,
+         "label": {
+          "fa": "لاکتات (چرخهٔ کوری)",
+          "en": "lactate (Cori cycle)"
+         },
+         "explanation": {
+          "fa": "NAD+ را بازتولید می‌کند؛ در گلبول قرمز و عضلهٔ بی‌هوازی.",
+          "en": "Regenerates NAD+; in red cells and anaerobic muscle."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "prod",
+         "row": 2,
+         "label": {
+          "fa": "آلانین (چرخهٔ آلانین)",
+          "en": "alanine (alanine cycle)"
+         },
+         "explanation": {
+          "fa": "نیتروژن را از عضله به کبد می‌برد.",
+          "en": "Carries nitrogen from muscle back to the liver."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "کمپلکس PDH",
+          "en": "PDH complex"
+         }
+        },
+        {
+         "from": "n1",
+         "to": "n3",
+         "label": {
+          "fa": "پیروات‌کربوکسیلاز (بیوتین)",
+          "en": "pyruvate carboxylase (biotin)"
+         }
+        },
+        {
+         "from": "n1",
+         "to": "n4",
+         "label": {
+          "fa": "لاکتات دهیدروژناز",
+          "en": "lactate dehydrogenase"
+         }
+        },
+        {
+         "from": "n1",
+         "to": "n5",
+         "label": {
+          "fa": "آلانین آمینوترانسفراز (ALT)",
+          "en": "alanine aminotransferase (ALT)"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "کمپلکس PDH سه زیرواحد دارد: ",
+         "en": "The PDH complex has three subunits: "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "E1",
+         "en": "E1"
+        },
+        "definition": {
+         "fa": "پیروات‌دهیدروژناز؛ با تیامین‌پیروفسفات یک CO2 برمی‌دارد.",
+         "en": "Pyruvate dehydrogenase; uses thiamine pyrophosphate and removes a CO2."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": "، ",
+         "en": ", "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "E2",
+         "en": "E2"
+        },
+        "definition": {
+         "fa": "دی‌هیدرولیپوئیل ترانس‌استیلاز؛ با لیپوئیک‌اسید کار می‌کند.",
+         "en": "Dihydrolipoyl transacetylase; works with lipoic acid."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " و ",
+         "en": " and "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "E3",
+         "en": "E3"
+        },
+        "definition": {
+         "fa": "دی‌هیدرولیپوئیل دهیدروژناز؛ با FAD و NAD لیپوئیک‌اسید را بازسازی می‌کند.",
+         "en": "Dihydrolipoyl dehydrogenase; uses FAD and NAD to regenerate lipoic acid."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": ". همین سه آنزیم و همان پنج کوفاکتور در آلفا-کتوگلوتارات دهیدروژناز هم به‌کار می‌روند.",
+         "en": ". The very same three-enzyme, five-cofactor design is reused by alpha-ketoglutarate dehydrogenase."
+        }
+       }
+      ]
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "کوفاکتور",
+         "en": "Cofactor"
+        },
+        {
+         "fa": "ویتامین",
+         "en": "Vitamin"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "تیامین‌پیروفسفات (TPP)",
+          "en": "thiamine pyrophosphate (TPP)"
+         },
+         {
+          "fa": "B1 — تیامین",
+          "en": "B1 — thiamine"
+         }
+        ],
+        [
+         {
+          "fa": "FAD",
+          "en": "FAD"
+         },
+         {
+          "fa": "B2 — ریبوفلاوین",
+          "en": "B2 — riboflavin"
+         }
+        ],
+        [
+         {
+          "fa": "NAD",
+          "en": "NAD"
+         },
+         {
+          "fa": "B3 — نیاسین",
+          "en": "B3 — niacin"
+         }
+        ],
+        [
+         {
+          "fa": "کوآنزیم A",
+          "en": "coenzyme A"
+         },
+         {
+          "fa": "B5 — پانتوتنیک‌اسید",
+          "en": "B5 — pantothenic acid"
+         }
+        ],
+        [
+         {
+          "fa": "لیپوئیک‌اسید",
+          "en": "lipoic acid"
+         },
+         {
+          "fa": "ویتامین نیست",
+          "en": "not a vitamin"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "mnem",
+       "title": {
+        "fa": "چهار ویتامین B اول",
+        "en": "The first four B vitamins"
+       },
+       "body": {
+        "fa": "B1، B2، B3 و B5 همگی کوفاکتور همین کمپلکس‌اند (ویتامین B4 وجود ندارد). همه محلول در آب‌اند و مثل B12 در کبد ذخیره نمی‌شوند.",
+        "en": "B1, B2, B3, and B5 are all cofactors of this one complex (there is no vitamin B4). All are water-soluble and, unlike B12, are not stored in the liver."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "کمبود تیامین — و چرا تیامین قبل از گلوکز",
+        "en": "Thiamine deficiency — and thiamine before glucose"
+       },
+       "body": {
+        "fa": "بری‌بریِ خشک با پلی‌نوریت و ضعف عضلانی، و بری‌بریِ مرطوب با نارسایی قلبی پرخروجی و ادم بروز می‌کند. در الکلی‌های سوءتغذیه، کمبود تیامین سندرم ورنیکه-کورساکوف می‌دهد. اگر به بیمار هیپوگلیسمیکِ سوءتغذیه‌ای اول گلوکز بدهید، بدون تیامین نمی‌تواند آن را متابولیزه کند — به همین دلیل کلاسیک است که تیامین را پیش از گلوکز بدهیم.",
+        "en": "Dry beriberi presents with polyneuritis and muscle weakness; wet beriberi with high-output heart failure and edema. In malnourished alcoholics, thiamine deficiency causes Wernicke-Korsakoff syndrome. If you give a malnourished hypoglycemic patient glucose first, they cannot metabolize it without thiamine — hence the classic teaching to give thiamine before glucose."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "warn",
+       "title": {
+        "fa": "مسمومیت با آرسنیک",
+        "en": "Arsenic poisoning"
+       },
+       "body": {
+        "fa": "آرسنیک به لیپوئیک‌اسید می‌چسبد و کمپلکس PDH را مهار می‌کند — عملاً مثل کمبود تیامین عمل می‌کند. نشانهٔ کلاسیک: بوی سیر در نفس، همراه با استفراغ و اسهال، و در نهایت کما.",
+        "en": "Arsenic binds lipoic acid and inhibits the PDH complex — behaving much like a thiamine deficiency. The classic sign: a garlic smell on the breath, with vomiting and diarrhea, and ultimately coma."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "کمبود کمپلکس PDH",
+        "en": "PDH complex deficiency"
+       },
+       "body": {
+        "fa": "اغلب وابسته به X (جهش PDHA1، زیرواحد E1-آلفا). چون پیروات وارد TCA نمی‌شود، به لاکتات و آلانین منحرف می‌شود: اسیدوز لاکتیک شدید و آلانین بالا، با تأخیر رشد و تکامل. درمان: مکمل تیامین و لیپوئیک‌اسید، و رژیم کتوژنیک (کربوهیدرات کم، چربی زیاد) با آمینواسیدهای کتوژنیک لیزین و لوسین.",
+        "en": "Usually X-linked (a PDHA1 mutation in the E1-alpha subunit). Because pyruvate cannot enter the TCA cycle, it is shunted to lactate and alanine: severe lactic acidosis and high alanine, with growth and developmental delay. Treatment: thiamine and lipoic-acid supplements, plus a ketogenic diet (low carbohydrate, high fat) with the ketogenic amino acids lysine and leucine."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "پیروات چهار سرنوشت دارد: استیل‌CoA، اگزالواستات، لاکتات، آلانین.",
+        "en": "Pyruvate has four fates: acetyl-CoA, oxaloacetate, lactate, alanine."
+       },
+       {
+        "fa": "کمپلکس PDH = سه آنزیم (E1، E2، E3) + پنج کوفاکتور.",
+        "en": "The PDH complex = three enzymes (E1, E2, E3) + five cofactors."
+       },
+       {
+        "fa": "کوفاکتورها: TPP (B1)، FAD (B2)، NAD (B3)، CoA (B5)، لیپوئیک‌اسید.",
+        "en": "Cofactors: TPP (B1), FAD (B2), NAD (B3), CoA (B5), lipoic acid."
+       },
+       {
+        "fa": "استیل‌CoA، NADH و ATP آن را مهار و NAD+، ADP و کلسیم فعالش می‌کنند.",
+        "en": "Acetyl-CoA, NADH, and ATP inhibit it; NAD+, ADP, and calcium activate it."
+       },
+       {
+        "fa": "کمبود PDH → اسیدوز لاکتیک؛ درمان با رژیم کتوژنیک.",
+        "en": "PDH deficiency → lactic acidosis; treated with a ketogenic diet."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "«lycine» به «لیزین (lysine)» تصحیح شد.",
+       "en": "Corrected 'lycine' to 'lysine'."
+      }
+     },
+     {
+      "index": 2,
+      "note": {
+       "fa": "«dephosphyrolates» به «دِفسفریله می‌کند (dephosphorylates)» تصحیح شد.",
+       "en": "Corrected 'dephosphyrolates' to 'dephosphorylates'."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "fructose-galactose",
+   "title": {
+    "fa": "فروکتوز و گالاکتوز",
+    "en": "Fructose & Galactose"
+   },
+   "subtitle": {
+    "fa": "دو قند دیگر و چهار اختلال کلاسیک آن‌ها",
+    "en": "The other two sugars and their four classic disorders"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "فروکتوز و گالاکتوز",
+     "en": "Fructose & Galactose"
+    },
+    "subtitle": {
+     "fa": "دو مونوساکارید دیگر و چهار اختلال کلاسیک آن‌ها",
+     "en": "The other two monosaccharides and their four classic disorders"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "term",
+        "content": {
+         "fa": "فروکتوز و گالاکتوز",
+         "en": "fructose and galactose"
+        },
+        "definition": {
+         "fa": "ایزومرهای گلوکز با همان فرمول C6H12O6 اما آرایش متفاوت.",
+         "en": "Isomers of glucose — same C6H12O6 formula, different spatial arrangement."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " دو مونوساکارید دیگرند که بدن می‌تواند متابولیزه کند. فروکتوز از ",
+         "en": " are the other two monosaccharides the body can metabolize. Fructose comes from "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "ساکارز",
+         "en": "sucrose"
+        },
+        "definition": {
+         "fa": "قند خوراکی = گلوکز + فروکتوز.",
+         "en": "Table sugar = glucose + fructose."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " و گالاکتوز از ",
+         "en": " and galactose from "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "لاکتوز",
+         "en": "lactose"
+        },
+        "definition": {
+         "fa": "قند شیر = گلوکز + گالاکتوز.",
+         "en": "Milk sugar = glucose + galactose."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " می‌آید. هر کدام دو اختلال دارند: یکی خوش‌خیم و یکی خطرناک.",
+         "en": " comes. Each has two disorders: one benign and one dangerous."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "متابولیسم فروکتوز",
+        "en": "Fructose metabolism"
+       },
+       "subtitle": {
+        "fa": "زیر گام محدودکنندهٔ گلیکولیز وارد می‌شود",
+        "en": "It enters below glycolysis's rate-limiting step"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "فروکتوز",
+          "en": "fructose"
+         },
+         "explanation": {
+          "fa": "با ناقل GLUT5 از روده جذب می‌شود.",
+          "en": "Absorbed from the gut by the GLUT5 transporter."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "فروکتوز-۱-فسفات",
+          "en": "fructose-1-phosphate"
+         },
+         "explanation": {
+          "fa": "در عدم‌تحمل ارثی فروکتوز اینجا تلنبار می‌شود و فسفات را به دام می‌اندازد.",
+          "en": "In hereditary fructose intolerance it piles up here and traps phosphate."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "دی‌هیدروکسی‌استون فسفات",
+          "en": "dihydroxyacetone phosphate"
+         },
+         "explanation": {
+          "fa": "حدواسط گلیکولیز.",
+          "en": "A glycolysis intermediate."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "گلیسرآلدهید",
+          "en": "glyceraldehyde"
+         },
+         "explanation": {
+          "fa": "با تریوکیناز فسفریله می‌شود.",
+          "en": "Phosphorylated by triokinase."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "prod",
+         "row": 3,
+         "label": {
+          "fa": "ورود به گلیکولیز",
+          "en": "enters glycolysis"
+         },
+         "explanation": {
+          "fa": "چون از PFK-1 رد شده، سریع‌تر از گلوکز متابولیزه می‌شود.",
+          "en": "Having bypassed PFK-1, it is metabolized faster than glucose."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "فروکتوکیناز (کبد)",
+          "en": "fructokinase (liver)"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "آلدولاز B",
+          "en": "aldolase B"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n4",
+         "label": {
+          "fa": "آلدولاز B",
+          "en": "aldolase B"
+         }
+        },
+        {
+         "from": "n4",
+         "to": "n5",
+         "label": {
+          "fa": "تریوکیناز",
+          "en": "triokinase"
+         }
+        },
+        {
+         "from": "n3",
+         "to": "n5"
+        }
+       ]
+      }
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "متابولیسم گالاکتوز",
+        "en": "Galactose metabolism"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "گالاکتوز",
+          "en": "galactose"
+         },
+         "explanation": {
+          "fa": "از لاکتوز شیر می‌آید و با SGLT1 جذب می‌شود.",
+          "en": "Comes from milk lactose and is absorbed via SGLT1."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "sub",
+         "row": 1,
+         "label": {
+          "fa": "گالاکتوز-۱-فسفات",
+          "en": "galactose-1-phosphate"
+         },
+         "explanation": {
+          "fa": "در گالاکتوزمی کلاسیک تلنبار می‌شود و به کبد آسیب می‌زند.",
+          "en": "Accumulates in classic galactosemia and damages the liver."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "prod",
+         "row": 2,
+         "label": {
+          "fa": "گلوکز-۱-فسفات",
+          "en": "glucose-1-phosphate"
+         },
+         "explanation": {
+          "fa": "می‌تواند به گلیکوژن یا گلیکولیز برود.",
+          "en": "Can go to glycogen or into glycolysis."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2",
+         "label": {
+          "fa": "گالاکتوکیناز (ATP)",
+          "en": "galactokinase (ATP)"
+         }
+        },
+        {
+         "from": "n2",
+         "to": "n3",
+         "label": {
+          "fa": "GALT (با UDP-گلوکز)",
+          "en": "GALT (using UDP-glucose)"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "اختلال",
+         "en": "Disorder"
+        },
+        {
+         "fa": "آنزیم ناقص",
+         "en": "Deficient enzyme"
+        },
+        {
+         "fa": "شدت",
+         "en": "Severity"
+        },
+        {
+         "fa": "یافتهٔ کلیدی",
+         "en": "Key finding"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "فروکتوزوری ضروری",
+          "en": "Essential fructosuria"
+         },
+         {
+          "fa": "فروکتوکیناز",
+          "en": "fructokinase"
+         },
+         {
+          "fa": "خوش‌خیم",
+          "en": "Benign"
+         },
+         {
+          "fa": "فقط فروکتوز در ادرار",
+          "en": "fructose in the urine only"
+         }
+        ],
+        [
+         {
+          "fa": "عدم‌تحمل ارثی فروکتوز",
+          "en": "Hereditary fructose intolerance"
+         },
+         {
+          "fa": "آلدولاز B",
+          "en": "aldolase B"
+         },
+         {
+          "fa": "شدید",
+          "en": "Severe"
+         },
+         {
+          "fa": "هیپوگلیسمی و استفراغ پس از از شیر گرفتن",
+          "en": "hypoglycemia and vomiting after weaning"
+         }
+        ],
+        [
+         {
+          "fa": "کمبود گالاکتوکیناز",
+          "en": "Galactokinase deficiency"
+         },
+         {
+          "fa": "گالاکتوکیناز",
+          "en": "galactokinase"
+         },
+         {
+          "fa": "خفیف",
+          "en": "Mild"
+         },
+         {
+          "fa": "فقط آب‌مروارید",
+          "en": "cataracts only"
+         }
+        ],
+        [
+         {
+          "fa": "گالاکتوزمی کلاسیک",
+          "en": "Classic galactosemia"
+         },
+         {
+          "fa": "GALT",
+          "en": "GALT"
+         },
+         {
+          "fa": "شدید",
+          "en": "Severe"
+         },
+         {
+          "fa": "نارسایی کبد، زردی، آب‌مروارید",
+          "en": "liver failure, jaundice, cataracts"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "clin",
+       "title": {
+        "fa": "عدم‌تحمل ارثی فروکتوز",
+        "en": "Hereditary fructose intolerance"
+       },
+       "body": {
+        "fa": "فروکتوز-۱-فسفات در کبد تلنبار می‌شود و فسفات و ATP را به دام می‌اندازد؛ در نتیجه نه گلوکونئوژنز و نه تجزیهٔ گلیکوژن انجام می‌شود. کلاسیک: نوزادی که تازه از شیر گرفته شده، پس از غذا هیپوگلیسمی، استفراغ، شکست رشد و کبد بزرگ دارد. درمان: پرهیز از فروکتوز، ساکارز و سوربیتول.",
+        "en": "Fructose-1-phosphate builds up in the liver and traps phosphate and ATP, so neither gluconeogenesis nor glycogen breakdown can run. Classically: a just-weaned infant with post-feeding hypoglycemia, vomiting, failure to thrive, and an enlarged liver. Treatment: avoid fructose, sucrose, and sorbitol."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "مسیر پلی‌ال و آب‌مروارید",
+        "en": "The polyol pathway and cataracts"
+       },
+       "body": {
+        "fa": "آنزیم آلدوز ردوکتاز گلوکز را به سوربیتول و گالاکتوز را به گالاکتیتول تبدیل می‌کند. تجمع این الکل‌های قندی در عدسیهٔ چشم آب‌مروارید می‌سازد — همان مکانیسمی که هم در دیابت و هم در گالاکتوزمی دیده می‌شود. سوربیتول هم می‌تواند به فروکتوز تبدیل شود؛ برای همین در عدم‌تحمل فروکتوز ممنوع است.",
+        "en": "Aldose reductase converts glucose to sorbitol and galactose to galactitol. These sugar alcohols accumulate in the lens and cause cataracts — the same mechanism in both diabetes and galactosemia. Sorbitol can also be converted to fructose, which is why it is forbidden in fructose intolerance."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "mnem",
+       "title": {
+        "fa": "چرا فروکتوز سریع‌تر است",
+        "en": "Why fructose is faster"
+       },
+       "body": {
+        "fa": "گلوکز و گالاکتوز باید از گلوگاه PFK-1 رد شوند، اما فروکتوز پایین‌تر از آن وارد گلیکولیز می‌شود و این گام محدودکننده را دور می‌زند — برای همین متابولیسمش سریع‌تر است.",
+        "en": "Glucose and galactose must squeeze through the PFK-1 bottleneck, but fructose enters glycolysis below it, bypassing that rate-limiting step — which is why it is metabolized faster."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "فروکتوز: فروکتوکیناز → F1P → آلدولاز B → DHAP + گلیسرآلدهید.",
+        "en": "Fructose: fructokinase → F1P → aldolase B → DHAP + glyceraldehyde."
+       },
+       {
+        "fa": "گالاکتوز: گالاکتوکیناز → Gal-1-P → GALT → گلوکز-۱-فسفات.",
+        "en": "Galactose: galactokinase → Gal-1-P → GALT → glucose-1-phosphate."
+       },
+       {
+        "fa": "نقص آنزیم اول (کیناز) خوش‌خیم است؛ نقص آنزیم دوم خطرناک.",
+        "en": "Losing the first enzyme (the kinase) is benign; losing the second is dangerous."
+       },
+       {
+        "fa": "گالاکتیتول و سوربیتول در عدسیه آب‌مروارید می‌سازند.",
+        "en": "Galactitol and sorbitol build up in the lens and cause cataracts."
+       },
+       {
+        "fa": "هر دو بیماری شدید با غربالگری نوزادان تشخیص داده می‌شوند.",
+        "en": "Both severe diseases are caught by newborn screening."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "«SGL1» به «SGLT1» تصحیح شد.",
+       "en": "Corrected 'SGL1' to 'SGLT1'."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "courseID": "glucose",
+   "title": {
+    "fa": "گلوکز",
+    "en": "Glucose"
+   },
+   "subtitle": {
+    "fa": "کربوهیدرات‌ها، ناقل‌های GLUT/SGLT، و مصرف بافتی",
+    "en": "Carbohydrates, the GLUT/SGLT transporters, and tissue use"
+   },
+   "module": {
+    "id": "m1",
+    "title": {
+     "fa": "گلوکز",
+     "en": "Glucose"
+    },
+    "subtitle": {
+     "fa": "از کربوهیدرات غذا تا ناقل‌های GLUT و مصرف در بافت‌ها",
+     "en": "From dietary carbohydrate to the GLUT transporters and tissue use"
+    },
+    "blocks": [
+     {
+      "type": "lead",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "واژهٔ «کربوهیدرات» یعنی کربنِ آبدار: ",
+         "en": "The word carbohydrate literally means watered carbon: "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "گلوکز",
+         "en": "glucose"
+        },
+        "definition": {
+         "fa": "مهم‌ترین مونوساکارید بدن؛ فرمول C6H12O6.",
+         "en": "The body's most important monosaccharide; formula C6H12O6."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " فرمول C6H12O6 دارد. همهٔ کربوهیدرات‌های غذا در نهایت به سه ",
+         "en": " has the formula C6H12O6. All dietary carbohydrate is finally broken down into three "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "مونوساکارید",
+         "en": "monosaccharides"
+        },
+        "definition": {
+         "fa": "گلوکز، فروکتوز و گالاکتوز — سه ایزومر با یک فرمول.",
+         "en": "Glucose, fructose, and galactose — three isomers sharing one formula."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " شکسته می‌شوند: گلوکز، فروکتوز و گالاکتوز؛ و فقط همین‌ها وارد خون می‌شوند.",
+         "en": ": glucose, fructose, and galactose; and only these enter the blood."
+        }
+       }
+      ]
+     },
+     {
+      "type": "flowchart",
+      "flowchart": {
+       "title": {
+        "fa": "جذب قندها در روده",
+        "en": "Sugar absorption in the intestine"
+       },
+       "subtitle": {
+        "fa": "دو ناقل ورودی، یک ناقل خروجی",
+        "en": "Two transporters in, one transporter out"
+       },
+       "nodes": [
+        {
+         "id": "n1",
+         "kind": "base",
+         "row": 0,
+         "label": {
+          "fa": "مونوساکاریدها در لومن روده",
+          "en": "monosaccharides in the gut lumen"
+         },
+         "explanation": {
+          "fa": "حاصل شکستن دی‌ساکاریدها و نشاسته.",
+          "en": "Produced by breaking down disaccharides and starch."
+         }
+        },
+        {
+         "id": "n2",
+         "kind": "enz",
+         "row": 1,
+         "label": {
+          "fa": "SGLT1 — گلوکز و گالاکتوز",
+          "en": "SGLT1 — glucose & galactose"
+         },
+         "explanation": {
+          "fa": "همراه با سدیم و خلاف شیب غلظت؛ به ATP وابسته است.",
+          "en": "Co-transported with sodium, against the gradient; depends on ATP."
+         }
+        },
+        {
+         "id": "n3",
+         "kind": "enz",
+         "row": 1,
+         "label": {
+          "fa": "GLUT5 — فروکتوز",
+          "en": "GLUT5 — fructose"
+         },
+         "explanation": {
+          "fa": "انتشار تسهیل‌شده، بدون نیاز به سدیم.",
+          "en": "Facilitated diffusion, no sodium needed."
+         }
+        },
+        {
+         "id": "n4",
+         "kind": "sub",
+         "row": 2,
+         "label": {
+          "fa": "انتروسیت",
+          "en": "enterocyte"
+         },
+         "explanation": {
+          "fa": "غلظت قند درون سلول بالا می‌رود.",
+          "en": "Sugar concentration rises inside the cell."
+         }
+        },
+        {
+         "id": "n5",
+         "kind": "prod",
+         "row": 3,
+         "label": {
+          "fa": "خون (ورید باب)",
+          "en": "blood (portal vein)"
+         },
+         "explanation": {
+          "fa": "هر سه قند از GLUT2 خارج می‌شوند.",
+          "en": "All three sugars exit through GLUT2."
+         }
+        }
+       ],
+       "edges": [
+        {
+         "from": "n1",
+         "to": "n2"
+        },
+        {
+         "from": "n1",
+         "to": "n3"
+        },
+        {
+         "from": "n2",
+         "to": "n4"
+        },
+        {
+         "from": "n3",
+         "to": "n4"
+        },
+        {
+         "from": "n4",
+         "to": "n5",
+         "label": {
+          "fa": "GLUT2 (دوطرفه)",
+          "en": "GLUT2 (bidirectional)"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "type": "paragraph",
+      "runs": [
+       {
+        "kind": "text",
+        "content": {
+         "fa": "دی‌ساکاریدها دو مونوساکارید به‌هم چسبیده‌اند: ",
+         "en": "Disaccharides are two monosaccharides joined together: "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "لاکتوز",
+         "en": "lactose"
+        },
+        "definition": {
+         "fa": "گالاکتوز + گلوکز؛ با آنزیم لاکتاز شکسته می‌شود.",
+         "en": "Galactose + glucose; split by the enzyme lactase."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " (با لاکتاز) و ",
+         "en": " (by lactase) and "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "ساکارز",
+         "en": "sucrose"
+        },
+        "definition": {
+         "fa": "گلوکز + فروکتوز؛ با آنزیم ساکاراز شکسته می‌شود.",
+         "en": "Glucose + fructose; split by the enzyme sucrase."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " (با ساکاراز). پلی‌ساکاریدها زنجیره‌های بلندند: نشاسته و گلیکوژن قابل هضم‌اند، اما ",
+         "en": " (by sucrase). Polysaccharides are long chains: starch and glycogen are digestible, but "
+        }
+       },
+       {
+        "kind": "term",
+        "content": {
+         "fa": "سلولز",
+         "en": "cellulose"
+        },
+        "definition": {
+         "fa": "پلیمر گلوکز با پیوندی که انسان نمی‌تواند بشکند — همان فیبر غذایی.",
+         "en": "A glucose polymer with a bond humans cannot break — this is dietary fiber."
+        }
+       },
+       {
+        "kind": "text",
+        "content": {
+         "fa": " هضم نمی‌شود و همان فیبری است که به مدفوع حجم می‌دهد.",
+         "en": " is not digested and is the fiber that adds bulk to the stool."
+        }
+       }
+      ]
+     },
+     {
+      "type": "comparison",
+      "comparison": {
+       "headers": [
+        {
+         "fa": "ناقل",
+         "en": "Transporter"
+        },
+        {
+         "fa": "محل",
+         "en": "Location"
+        },
+        {
+         "fa": "وابسته به انسولین؟",
+         "en": "Insulin-dependent?"
+        }
+       ],
+       "rows": [
+        [
+         {
+          "fa": "GLUT1",
+          "en": "GLUT1"
+         },
+         {
+          "fa": "مغز، گلبول قرمز",
+          "en": "brain, red blood cells"
+         },
+         {
+          "fa": "خیر",
+          "en": "No"
+         }
+        ],
+        [
+         {
+          "fa": "GLUT2",
+          "en": "GLUT2"
+         },
+         {
+          "fa": "کبد، کلیه، پانکراس، روده",
+          "en": "liver, kidney, pancreas, intestine"
+         },
+         {
+          "fa": "خیر — دوطرفه",
+          "en": "No — bidirectional"
+         }
+        ],
+        [
+         {
+          "fa": "GLUT4",
+          "en": "GLUT4"
+         },
+         {
+          "fa": "عضله، بافت چربی",
+          "en": "muscle, adipose tissue"
+         },
+         {
+          "fa": "بله",
+          "en": "Yes"
+         }
+        ],
+        [
+         {
+          "fa": "SGLT1",
+          "en": "SGLT1"
+         },
+         {
+          "fa": "روده، توبول کلیه",
+          "en": "intestine, renal tubule"
+         },
+         {
+          "fa": "خیر — وابسته به سدیم",
+          "en": "No — sodium-dependent"
+         }
+        ]
+       ]
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "info",
+       "title": {
+        "fa": "گلبول قرمز: بدون میتوکندری",
+        "en": "The red blood cell: no mitochondria"
+       },
+       "body": {
+        "fa": "گلبول قرمز میتوکندری ندارد، پس فقط گلیکولیز بی‌هوازی انجام می‌دهد و پیوسته لاکتات می‌سازد؛ لاکتات به کبد می‌رود و دوباره گلوکز می‌شود (چرخهٔ کوری). بخشی از گلوکزش هم به شنت HMP می‌رود تا NADPH بسازد و از سلول در برابر آسیب اکسیداتیو محافظت کند.",
+        "en": "The red cell has no mitochondria, so it runs only anaerobic glycolysis and constantly makes lactate; that lactate travels to the liver and becomes glucose again (the Cori cycle). Some of its glucose also goes down the HMP shunt to make NADPH, protecting the cell from oxidative damage."
+       }
+      }
+     },
+     {
+      "type": "callout",
+      "callout": {
+       "kind": "mnem",
+       "title": {
+        "fa": "کدام ناقل به انسولین نیاز دارد؟",
+        "en": "Which transporter needs insulin?"
+       },
+       "body": {
+        "fa": "GLUT4 = عضله و چربی = تنها ناقل وابسته به انسولین. مغز و گلبول قرمز (GLUT1) هر وقت گلوکز پیدا کنند برمی‌دارند و منتظر انسولین نمی‌مانند — چون مغز نمی‌تواند بدون گلوکز کار کند.",
+        "en": "GLUT4 = muscle and fat = the only insulin-dependent transporter. Brain and red cells (GLUT1) take up glucose whenever they can find it and never wait for insulin — because the brain cannot work without glucose."
+       }
+      }
+     },
+     {
+      "type": "summary",
+      "summary": [
+       {
+        "fa": "همهٔ کربوهیدرات‌ها به گلوکز، فروکتوز و گالاکتوز شکسته می‌شوند.",
+        "en": "All carbohydrates are broken down to glucose, fructose, and galactose."
+       },
+       {
+        "fa": "SGLT1 (با سدیم) گلوکز و گالاکتوز، و GLUT5 فروکتوز را وارد انتروسیت می‌کند.",
+        "en": "SGLT1 (with sodium) brings in glucose and galactose; GLUT5 brings in fructose."
+       },
+       {
+        "fa": "GLUT2 دوطرفه است و قند را از سلول به خون می‌فرستد.",
+        "en": "GLUT2 is bidirectional and sends sugar from the cell into the blood."
+       },
+       {
+        "fa": "فقط GLUT4 (عضله و چربی) وابسته به انسولین است.",
+        "en": "Only GLUT4 (muscle and fat) is insulin-dependent."
+       },
+       {
+        "fa": "گلبول قرمز بدون میتوکندری، لاکتات می‌سازد و NADPH را از شنت HMP می‌گیرد.",
+        "en": "The red cell, lacking mitochondria, makes lactate and gets NADPH from the HMP shunt."
+       }
+      ]
+     }
+    ],
+    "corrections": [
+     {
+      "index": 1,
+      "note": {
+       "fa": "«dissect ride» گفتاری به «دی‌ساکارید (disaccharide)» تصحیح شد.",
+       "en": "Corrected the spoken 'dissect ride' to 'disaccharide'."
+      }
+     },
+     {
+      "index": 2,
+      "note": {
+       "fa": "«SGL1» به «SGLT1» تصحیح شد.",
+       "en": "Corrected 'SGL1' to 'SGLT1'."
       }
      }
     ]
